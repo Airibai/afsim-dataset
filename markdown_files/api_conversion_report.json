@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-03-30T16:28:09.646044",
+  "config": {
+    "input_dir": "./pdf_files",
+    "output_dir": "./markdown_files",
+    "temp_dir": "./upload_temp",
+    "model_version": "vlm",
+    "language": "ch",
+    "enable_ocr": false,
+    "enable_table": true,
+    "enable_formula": true,
+    "upload_timeout": 300,
+    "parse_timeout": 1800,
+    "download_timeout": 300,
+    "poll_interval": 5,
+    "max_retries": 2,
+    "retry_delay": 3,
+    "max_files": null,
+    "daily_page_limit": 2000,
+    "est_pages_per_file": 50,
+    "skip_existing": true,
+    "skip_on_timeout": true
+  },
+  "stats": {
+    "success": 2,
+    "failed": 0,
+    "skipped": 0,
+    "timeout": 0
+  },
+  "pages_used": 100,
+  "failed_details": []
+}

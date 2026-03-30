@@ -1,0 +1,451 @@
+2026-03-30 14:44:26,717 - __main__ - INFO - 正在检查运行环境...
+2026-03-30 14:44:26,717 - __main__ - INFO - Python 版本：3.10
+2026-03-30 14:46:14,233 - __main__ - INFO - 正在检查运行环境...
+2026-03-30 14:46:14,233 - __main__ - INFO - Python 版本：3.10
+2026-03-30 14:46:14,279 - __main__ - INFO - MinerU 版本：1.3.12
+2026-03-30 14:46:14,279 - __main__ - WARNING - ⚠️  公式识别模块 (unimernet) 未安装，公式可能解析不完整
+2026-03-30 14:46:14,279 - __main__ - INFO - 开始批量转换...
+2026-03-30 14:46:14,281 - __main__ - INFO - ✓ OCR 模式已启用
+2026-03-30 14:46:14,283 - __main__ - WARNING - ⚠️  在 pdf_files 中未找到 PDF 文件
+2026-03-30 14:46:14,283 - __main__ - INFO - 
+============================================================
+2026-03-30 14:46:14,283 - __main__ - INFO - 所有任务完成！
+2026-03-30 14:46:14,283 - __main__ - INFO - ============================================================
+2026-03-30 14:46:47,467 - __main__ - INFO - 正在检查运行环境...
+2026-03-30 14:46:47,469 - __main__ - INFO - Python 版本：3.10
+2026-03-30 14:46:47,510 - __main__ - INFO - MinerU 版本：1.3.12
+2026-03-30 14:46:47,511 - __main__ - WARNING - ⚠️  公式识别模块 (unimernet) 未安装，公式可能解析不完整
+2026-03-30 14:46:47,511 - __main__ - INFO - 开始批量转换...
+2026-03-30 14:46:47,512 - __main__ - INFO - ✓ OCR 模式已启用
+2026-03-30 14:46:47,514 - __main__ - INFO - ============================================================
+2026-03-30 14:46:47,514 - __main__ - INFO - 共找到 63 个 PDF 文件
+2026-03-30 14:46:47,514 - __main__ - INFO - 并行线程数：4
+2026-03-30 14:46:47,514 - __main__ - INFO - ============================================================
+2026-03-30 14:46:47,515 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_201-240.pdf
+2026-03-30 14:46:47,515 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1401-1440.pdf
+2026-03-30 14:46:47,516 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1761-1800.pdf
+2026-03-30 14:46:47,516 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_681-720.pdf
+2026-03-30 14:46:47,518 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_201-240.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,518 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1401-1440.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,519 - __main__ - INFO - [1/63] 进度：1.6%
+2026-03-30 14:46:47,519 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_681-720.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,519 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1841-1880.pdf
+2026-03-30 14:46:47,519 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1641-1680.pdf
+2026-03-30 14:46:47,519 - __main__ - INFO - [2/63] 进度：3.2%
+2026-03-30 14:46:47,519 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1761-1800.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,520 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1441-1480.pdf
+2026-03-30 14:46:47,520 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1841-1880.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,520 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1641-1680.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,520 - __main__ - INFO - [3/63] 进度：4.8%
+2026-03-30 14:46:47,520 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2241-2280.pdf
+2026-03-30 14:46:47,520 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1441-1480.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,521 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_521-560.pdf
+2026-03-30 14:46:47,521 - __main__ - INFO - [4/63] 进度：6.3%
+2026-03-30 14:46:47,521 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_161-200.pdf
+2026-03-30 14:46:47,521 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2241-2280.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,521 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2121-2160.pdf
+2026-03-30 14:46:47,522 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_521-560.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,522 - __main__ - INFO - [5/63] 进度：7.9%
+2026-03-30 14:46:47,523 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_161-200.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,524 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2161-2200.pdf
+2026-03-30 14:46:47,524 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2121-2160.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,524 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_481-520.pdf
+2026-03-30 14:46:47,524 - __main__ - INFO - [6/63] 进度：9.5%
+2026-03-30 14:46:47,525 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_881-920.pdf
+2026-03-30 14:46:47,525 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2161-2200.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,526 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2081-2120.pdf
+2026-03-30 14:46:47,526 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_481-520.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,526 - __main__ - INFO - [7/63] 进度：11.1%
+2026-03-30 14:46:47,527 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_881-920.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,527 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1681-1720.pdf
+2026-03-30 14:46:47,528 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2081-2120.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,528 - __main__ - INFO - [8/63] 进度：12.7%
+2026-03-30 14:46:47,528 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_761-800.pdf
+2026-03-30 14:46:47,529 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_401-440.pdf
+2026-03-30 14:46:47,529 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1681-1720.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,529 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1881-1920.pdf
+2026-03-30 14:46:47,530 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1881-1920.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,530 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_721-760.pdf
+2026-03-30 14:46:47,531 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_761-800.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,531 - __main__ - INFO - [9/63] 进度：14.3%
+2026-03-30 14:46:47,531 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_401-440.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,531 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2361-2400.pdf
+2026-03-30 14:46:47,531 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_721-760.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,532 - __main__ - INFO - [10/63] 进度：15.9%
+2026-03-30 14:46:47,532 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2201-2240.pdf
+2026-03-30 14:46:47,532 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1001-1040.pdf
+2026-03-30 14:46:47,533 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2361-2400.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,533 - __main__ - INFO - [11/63] 进度：17.5%
+2026-03-30 14:46:47,533 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1161-1200.pdf
+2026-03-30 14:46:47,534 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2201-2240.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,534 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1001-1040.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,534 - __main__ - INFO - [12/63] 进度：19.0%
+2026-03-30 14:46:47,535 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_121-160.pdf
+2026-03-30 14:46:47,535 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1161-1200.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,535 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_561-600.pdf
+2026-03-30 14:46:47,535 - __main__ - INFO - [13/63] 进度：20.6%
+2026-03-30 14:46:47,536 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1-40.pdf
+2026-03-30 14:46:47,536 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_121-160.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,536 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2441-2480.pdf
+2026-03-30 14:46:47,536 - __main__ - INFO - [14/63] 进度：22.2%
+2026-03-30 14:46:47,537 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_561-600.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,537 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1-40.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,538 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2281-2320.pdf
+2026-03-30 14:46:47,538 - __main__ - INFO - [15/63] 进度：23.8%
+2026-03-30 14:46:47,538 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2441-2480.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,539 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_841-880.pdf
+2026-03-30 14:46:47,539 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1361-1400.pdf
+2026-03-30 14:46:47,540 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2281-2320.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,540 - __main__ - INFO - [16/63] 进度：25.4%
+2026-03-30 14:46:47,540 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_921-960.pdf
+2026-03-30 14:46:47,541 - __main__ - INFO - [17/63] 进度：27.0%
+2026-03-30 14:46:47,541 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_841-880.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,541 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1041-1080.pdf
+2026-03-30 14:46:47,541 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1361-1400.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,542 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_921-960.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,542 - __main__ - INFO - [18/63] 进度：28.6%
+2026-03-30 14:46:47,543 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1561-1600.pdf
+2026-03-30 14:46:47,543 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1041-1080.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,543 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1921-1960.pdf
+2026-03-30 14:46:47,544 - __main__ - INFO - [19/63] 进度：30.2%
+2026-03-30 14:46:47,544 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1121-1160.pdf
+2026-03-30 14:46:47,544 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1561-1600.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,545 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1201-1240.pdf
+2026-03-30 14:46:47,545 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1921-1960.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,545 - __main__ - INFO - [20/63] 进度：31.7%
+2026-03-30 14:46:47,546 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1121-1160.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,546 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1961-2000.pdf
+2026-03-30 14:46:47,546 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1201-1240.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,547 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1801-1840.pdf
+2026-03-30 14:46:47,547 - __main__ - INFO - [21/63] 进度：33.3%
+2026-03-30 14:46:47,548 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_241-280.pdf
+2026-03-30 14:46:47,548 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1961-2000.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,548 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2041-2080.pdf
+2026-03-30 14:46:47,549 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1801-1840.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,549 - __main__ - INFO - [22/63] 进度：34.9%
+2026-03-30 14:46:47,549 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_241-280.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,549 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_801-840.pdf
+2026-03-30 14:46:47,550 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2041-2080.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,550 - __main__ - INFO - [23/63] 进度：36.5%
+2026-03-30 14:46:47,550 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1521-1560.pdf
+2026-03-30 14:46:47,550 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1481-1520.pdf
+2026-03-30 14:46:47,551 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_801-840.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,551 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_281-320.pdf
+2026-03-30 14:46:47,551 - __main__ - INFO - [24/63] 进度：38.1%
+2026-03-30 14:46:47,551 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1521-1560.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,552 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1481-1520.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,552 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2001-2040.pdf
+2026-03-30 14:46:47,552 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_281-320.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,552 - __main__ - INFO - [25/63] 进度：39.7%
+2026-03-30 14:46:47,553 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1241-1280.pdf
+2026-03-30 14:46:47,553 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_81-120.pdf
+2026-03-30 14:46:47,554 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2001-2040.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,554 - __main__ - INFO - [26/63] 进度：41.3%
+2026-03-30 14:46:47,554 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_441-480.pdf
+2026-03-30 14:46:47,555 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1241-1280.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,555 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_81-120.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,556 - __main__ - INFO - [27/63] 进度：42.9%
+2026-03-30 14:46:47,556 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2321-2360.pdf
+2026-03-30 14:46:47,556 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_441-480.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,557 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2481-2488.pdf
+2026-03-30 14:46:47,557 - __main__ - INFO - [28/63] 进度：44.4%
+2026-03-30 14:46:47,557 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_321-360.pdf
+2026-03-30 14:46:47,558 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2321-2360.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,558 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1281-1320.pdf
+2026-03-30 14:46:47,558 - __main__ - INFO - [29/63] 进度：46.0%
+2026-03-30 14:46:47,559 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2481-2488.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,559 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_321-360.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,559 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1721-1760.pdf
+2026-03-30 14:46:47,560 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1281-1320.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,560 - __main__ - INFO - [30/63] 进度：47.6%
+2026-03-30 14:46:47,561 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_2401-2440.pdf
+2026-03-30 14:46:47,561 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_601-640.pdf
+2026-03-30 14:46:47,561 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1721-1760.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,561 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1081-1120.pdf
+2026-03-30 14:46:47,561 - __main__ - INFO - [31/63] 进度：49.2%
+2026-03-30 14:46:47,562 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_2401-2440.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,562 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_601-640.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,563 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_961-1000.pdf
+2026-03-30 14:46:47,563 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1081-1120.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,563 - __main__ - INFO - [32/63] 进度：50.8%
+2026-03-30 14:46:47,564 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_361-400.pdf
+2026-03-30 14:46:47,564 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1321-1360.pdf
+2026-03-30 14:46:47,564 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_961-1000.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,565 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_641-680.pdf
+2026-03-30 14:46:47,565 - __main__ - INFO - [33/63] 进度：52.4%
+2026-03-30 14:46:47,565 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_361-400.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,566 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1321-1360.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,566 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_41-80.pdf
+2026-03-30 14:46:47,566 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_641-680.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,566 - __main__ - INFO - [34/63] 进度：54.0%
+2026-03-30 14:46:47,567 - __main__ - INFO - ▶ 开始：AFSIM2.9参考手册-v1.1_1601-1640.pdf
+2026-03-30 14:46:47,567 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_41-80.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,567 - __main__ - INFO - [35/63] 进度：55.6%
+2026-03-30 14:46:47,568 - __main__ - ERROR - ✗ 失败：AFSIM2.9参考手册-v1.1_1601-1640.pdf - No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,568 - __main__ - INFO - [36/63] 进度：57.1%
+2026-03-30 14:46:47,568 - __main__ - INFO - [37/63] 进度：58.7%
+2026-03-30 14:46:47,568 - __main__ - INFO - [38/63] 进度：60.3%
+2026-03-30 14:46:47,568 - __main__ - INFO - [39/63] 进度：61.9%
+2026-03-30 14:46:47,568 - __main__ - INFO - [40/63] 进度：63.5%
+2026-03-30 14:46:47,569 - __main__ - INFO - [41/63] 进度：65.1%
+2026-03-30 14:46:47,569 - __main__ - INFO - [42/63] 进度：66.7%
+2026-03-30 14:46:47,569 - __main__ - INFO - [43/63] 进度：68.3%
+2026-03-30 14:46:47,569 - __main__ - INFO - [44/63] 进度：69.8%
+2026-03-30 14:46:47,569 - __main__ - INFO - [45/63] 进度：71.4%
+2026-03-30 14:46:47,569 - __main__ - INFO - [46/63] 进度：73.0%
+2026-03-30 14:46:47,569 - __main__ - INFO - [47/63] 进度：74.6%
+2026-03-30 14:46:47,569 - __main__ - INFO - [48/63] 进度：76.2%
+2026-03-30 14:46:47,569 - __main__ - INFO - [49/63] 进度：77.8%
+2026-03-30 14:46:47,570 - __main__ - INFO - [50/63] 进度：79.4%
+2026-03-30 14:46:47,570 - __main__ - INFO - [51/63] 进度：81.0%
+2026-03-30 14:46:47,570 - __main__ - INFO - [52/63] 进度：82.5%
+2026-03-30 14:46:47,570 - __main__ - INFO - [53/63] 进度：84.1%
+2026-03-30 14:46:47,570 - __main__ - INFO - [54/63] 进度：85.7%
+2026-03-30 14:46:47,570 - __main__ - INFO - [55/63] 进度：87.3%
+2026-03-30 14:46:47,570 - __main__ - INFO - [56/63] 进度：88.9%
+2026-03-30 14:46:47,570 - __main__ - INFO - [57/63] 进度：90.5%
+2026-03-30 14:46:47,570 - __main__ - INFO - [58/63] 进度：92.1%
+2026-03-30 14:46:47,570 - __main__ - INFO - [59/63] 进度：93.7%
+2026-03-30 14:46:47,570 - __main__ - INFO - [60/63] 进度：95.2%
+2026-03-30 14:46:47,571 - __main__ - INFO - [61/63] 进度：96.8%
+2026-03-30 14:46:47,571 - __main__ - INFO - [62/63] 进度：98.4%
+2026-03-30 14:46:47,571 - __main__ - INFO - [63/63] 进度：100.0%
+2026-03-30 14:46:47,571 - __main__ - INFO - ============================================================
+2026-03-30 14:46:47,571 - __main__ - INFO - 转换完成报告
+2026-03-30 14:46:47,571 - __main__ - INFO - ============================================================
+2026-03-30 14:46:47,572 - __main__ - INFO - 总文件数：63
+2026-03-30 14:46:47,572 - __main__ - INFO - 成功：0
+2026-03-30 14:46:47,572 - __main__ - INFO - 失败：63
+2026-03-30 14:46:47,572 - __main__ - INFO - 跳过：0
+2026-03-30 14:46:47,572 - __main__ - INFO - 成功率：0.00%
+2026-03-30 14:46:47,572 - __main__ - WARNING - 
+失败文件详情:
+2026-03-30 14:46:47,572 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_201-240.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,573 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1401-1440.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,573 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_681-720.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,573 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1761-1800.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,573 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1841-1880.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,573 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1641-1680.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,573 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1441-1480.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2241-2280.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_521-560.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_161-200.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2121-2160.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2161-2200.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_481-520.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,574 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_881-920.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1681-1720.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2081-2120.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1881-1920.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_761-800.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_401-440.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_721-760.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,575 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2361-2400.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,576 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2201-2240.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,576 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1001-1040.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,576 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1161-1200.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,576 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_121-160.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,576 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_561-600.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,577 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1-40.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,577 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2441-2480.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,577 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2281-2320.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,577 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_841-880.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,578 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1361-1400.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,578 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_921-960.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,578 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1041-1080.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,578 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1561-1600.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,578 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1921-1960.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1121-1160.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1201-1240.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1961-2000.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1801-1840.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_241-280.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2041-2080.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_801-840.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1521-1560.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,579 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1481-1520.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_281-320.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2001-2040.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1241-1280.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_81-120.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_441-480.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2321-2360.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2481-2488.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,580 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_321-360.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1281-1320.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1721-1760.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_2401-2440.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_601-640.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1081-1120.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_961-1000.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,581 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_361-400.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,582 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1321-1360.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,582 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_641-680.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,582 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_41-80.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,582 - __main__ - WARNING -   - AFSIM2.9参考手册-v1.1_1601-1640.pdf: No module named 'magic_pdf.libs.convert'
+2026-03-30 14:46:47,584 - __main__ - INFO - 
+报告已保存：markdown_files\conversion_report.json
+2026-03-30 14:46:47,584 - __main__ - INFO - 
+============================================================
+2026-03-30 14:46:47,584 - __main__ - INFO - 所有任务完成！
+2026-03-30 14:46:47,584 - __main__ - INFO - ============================================================
+2026-03-30 14:59:32,311 - INFO - ✓ magic-pdf CLI 已就绪
+2026-03-30 14:59:32,313 - INFO - ============================================================
+2026-03-30 14:59:32,313 - INFO - 共找到 63 个 PDF 文件
+2026-03-30 14:59:32,313 - INFO - 输出目录：G:\ai-demo\afsim-dataset\markdown_files
+2026-03-30 14:59:32,313 - INFO - ============================================================
+2026-03-30 14:59:32,313 - INFO - [1/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1321-1360.pdf
+2026-03-30 14:59:34,335 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:34,336 - INFO - [2/63] ▶ 处理：AFSIM2.9参考手册-v1.1_2081-2120.pdf
+2026-03-30 14:59:36,287 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:36,288 - INFO - [3/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1361-1400.pdf
+2026-03-30 14:59:38,267 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:38,267 - INFO - [4/63] ▶ 处理：AFSIM2.9参考手册-v1.1_601-640.pdf
+2026-03-30 14:59:40,254 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:40,255 - INFO - [5/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1481-1520.pdf
+2026-03-30 14:59:42,205 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:42,206 - INFO - [6/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1081-1120.pdf
+2026-03-30 14:59:44,211 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:44,212 - INFO - [7/63] ▶ 处理：AFSIM2.9参考手册-v1.1_2481-2488.pdf
+2026-03-30 14:59:46,212 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:46,213 - INFO - [8/63] ▶ 处理：AFSIM2.9参考手册-v1.1_801-840.pdf
+2026-03-30 14:59:48,157 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:48,157 - INFO - [9/63] ▶ 处理：AFSIM2.9参考手册-v1.1_241-280.pdf
+2026-03-30 14:59:50,114 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:50,114 - INFO - [10/63] ▶ 处理：AFSIM2.9参考手册-v1.1_561-600.pdf
+2026-03-30 14:59:52,237 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:52,237 - INFO - [11/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1241-1280.pdf
+2026-03-30 14:59:54,389 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:54,389 - INFO - [12/63] ▶ 处理：AFSIM2.9参考手册-v1.1_2321-2360.pdf
+2026-03-30 14:59:56,445 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:56,446 - INFO - [13/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1601-1640.pdf
+2026-03-30 14:59:58,548 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 14:59:58,548 - INFO - [14/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1161-1200.pdf
+2026-03-30 15:00:00,764 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:00,765 - INFO - [15/63] ▶ 处理：AFSIM2.9参考手册-v1.1_2041-2080.pdf
+2026-03-30 15:00:02,865 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:02,866 - INFO - [16/63] ▶ 处理：AFSIM2.9参考手册-v1.1_2241-2280.pdf
+2026-03-30 15:00:04,871 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:04,871 - INFO - [17/63] ▶ 处理：AFSIM2.9参考手册-v1.1_401-440.pdf
+2026-03-30 15:00:06,867 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:06,867 - INFO - [18/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1001-1040.pdf
+2026-03-30 15:00:08,891 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:08,892 - INFO - [19/63] ▶ 处理：AFSIM2.9参考手册-v1.1_921-960.pdf
+2026-03-30 15:00:10,990 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:10,991 - INFO - [20/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1201-1240.pdf
+2026-03-30 15:00:13,074 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:13,074 - INFO - [21/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1641-1680.pdf
+2026-03-30 15:00:15,139 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:15,139 - INFO - [22/63] ▶ 处理：AFSIM2.9参考手册-v1.1_281-320.pdf
+2026-03-30 15:00:17,333 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:17,334 - INFO - [23/63] ▶ 处理：AFSIM2.9参考手册-v1.1_761-800.pdf
+2026-03-30 15:00:19,612 - ERROR - ✗ CLI 执行失败：Usage: magic-pdf [OPTIONS]
+Try 'magic-pdf --help' for help.
+
+Error: No such option: --mode (Possible options: --debug, --method)
+
+2026-03-30 15:00:19,612 - INFO - [24/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1961-2000.pdf
+2026-03-30 15:07:19,443 - INFO - ✓ magic-pdf CLI 已就绪 (版本：magic-pdf, version 1.3.12)
+2026-03-30 15:07:19,445 - INFO - ============================================================
+2026-03-30 15:07:19,445 - INFO - 共找到 63 个 PDF 文件
+2026-03-30 15:07:19,446 - INFO - 解析方法：ocr
+2026-03-30 15:07:19,446 - INFO - OCR 语言：ch
+2026-03-30 15:07:19,446 - INFO - 输出目录：G:\ai-demo\afsim-dataset\markdown_files
+2026-03-30 15:07:19,446 - INFO - ============================================================
+2026-03-30 15:07:19,446 - INFO - [1/63] ▶ 处理：AFSIM2.9参考手册-v1.1_1761-1800.pdf
+2026-03-30 15:07:21,664 - ERROR - ✗ 未找到生成的 Markdown 文件
+2026-03-30 15:07:21,665 - INFO - [2/63] ▶ 处理：AFSIM2.9参考手册-v1.1_841-880.pdf
+2026-03-30 15:07:23,679 - ERROR - ✗ 未找到生成的 Markdown 文件
+2026-03-30 15:07:23,679 - INFO - [3/63] ▶ 处理：AFSIM2.9参考手册-v1.1_881-920.pdf
+2026-03-30 15:07:25,701 - ERROR - ✗ 未找到生成的 Markdown 文件
+2026-03-30 15:07:25,701 - INFO - [4/63] ▶ 处理：AFSIM2.9参考手册-v1.1_2201-2240.pdf
+2026-03-30 15:07:28,021 - ERROR - ✗ 未找到生成的 Markdown 文件
+2026-03-30 15:07:28,021 - INFO - [5/63] ▶ 处理：AFSIM2.9参考手册-v1.1_401-440.pdf

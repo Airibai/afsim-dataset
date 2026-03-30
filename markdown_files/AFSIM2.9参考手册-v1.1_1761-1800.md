@@ -1,16 +1,3 @@
-- 让我们分析武器交战结果，以评估蓝方的武器交战表现：  
-- 转到工具 $\rightarrow$ 显示交战统计。  
-- 在攻击者下拉菜单中，选择Side: blue（蓝方）。  
-- 在目标下拉菜单中，选择Side:red（红方）。
-
-![](images/bc98eb1862a86415927a0994ef7e666550849eb6c768b85b11e8cb742f3d600a.jpg)
-
-![](images/ebae382580f99fee0da34673355419de32a4d619fc7d713eb317bf612294575d.jpg)
-
-![](images/f2b6673a323beef36494f335ca1520240d4421e854a4a3c2691f59ea7704bc62.jpg)
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
-
 # UNCLASSIFIED
 
 # 实践：交战统计
@@ -2268,3 +2255,33 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 Copyright © 2020 Infoctex, a DCS company. All rights reserved.
 
 Other requests for this document shall be referred to AFRL/RQQD.
+运行仿真！（按F5）  
+打开文件2_comm_sats.aer
+
+选择jacksonabad
+
+右键单击并选择WaterfallPlot（瀑布图）
+
+![](images/6d99c853d81ac6c28d846554ea33b13fdbfb49610a33a45cc5cb41b43d518b02.jpg)
+
+将InteractionType（交互类型）设置为Detecting（检测）  
+查看生成的图表
+
+尝试启用jacksonabad的以下功能：
+
+hh传感器体积（SensorVolume）  
+传感器轨迹线（OutgoingSensor TrackLines)
+
+下一步是将jacksonabad连接到NEARIDIUM星座......
+
+![](images/9501b55418c941a8a222ac4f2487c5d95fc570cece39a81eaba3c44959c07a1e.jpg)
+
+DISTRIBUTioNC.DistributionauthorizedtoU.S.GovernmentAgenciesandtheircontractors,11-Feb-2020.
+
+Copyright  2020 Infoscitex, a DCS company Allrights reserved
+
+Otherrequestsforthisdocument shall bereferredtoAFRL/RQQD.
+
+35
+
+![](images/049d9863c051629b971f32ad4a0376c680724a8604bcf110f87bcdbbafc6827f.jpg)

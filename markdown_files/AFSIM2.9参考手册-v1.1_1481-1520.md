@@ -1,3 +1,12 @@
+# ·在Project Browser树中双击evt文件
+
+![](images/cbfddaafdf36e1b6ebd1d98c1abd5f78ab2d406ac7f6a94c57155de5abae1a77.jpg)
+
+![](images/c58ce15d7ca7cae247d60daa6e121189481b0388728ac751ad52ff5d3691f01a.jpg)
+
+DISTRIBUTioNC.DistributionauthorizedtoU.S.Government Agenciesand theircontractors,9-Aug-19.
+
+OtherrequestsforthisdocumentshallbereferredtoAFRL/RQQD.
 - 允许用户查看在仿真过程中发生的所有事件  
 - 这是当前的可用事件列表：
 
@@ -1402,3 +1411,13 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 ![](images/6a7bd9304f4942789d753036f9c9fadcd88ed0c02c77173ea395b4ea8245e82c.jpg)
 
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+Warlock中很多特性和Mystic以及Wizard是相似的.  
+‘View'菜单用于打开不同的功能窗口  
+将Platform Movement打 开
+
+![](images/654a64d7fd90899d2d7f06d36b8921917767a8537fef3c7ed24a3ff68949d2f0.jpg)
+
+![](images/b255ae302a286bed834d13d4d6c683e100b9b017a789b98b77861a90459cc4b1.jpg)
+
+DISTRIBUTioNC.Distributionauthorized to U.S.Government Agenciesandtheircontractors,9-Aug-19. Otherrequestsforthisdocument shallbereferredtoAFRL/RQQD.
+

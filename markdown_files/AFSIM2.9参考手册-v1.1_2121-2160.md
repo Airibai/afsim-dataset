@@ -1,25 +1,3 @@
-![](images/bc71294f2bb89ffdc18dc7bcb91979616190510aeb9ff757c806538b2814417f.jpg)
-
-Mission 通过执行以下代码初始化模拟：
-
-app.InitializeSimulation(simPtr.get())
-
-- InitializeSimulation 调用: aSimPtr->Initialize()
-
-：
-
-- 接下来, WsfSimulation::Initialize 调用:
-
-WsfObserver::SimulationInitializing(this)
-
-- 这会通知所有已注册的事件观察者，模拟即将被初始化。
-
-注意：我们没有创建任何模拟观察者，因此该通知没有任何效果。
-
-56
-
-![](images/da2c7cf0b20a2ddab388340b1cd790e767f222c7b91c445a0e6fba7adefea730.jpg)
-
 # UNCLASSIFIED
 
 # AFSIM插件&扩展
@@ -1586,3 +1564,31 @@ mwArray mwState;
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
 
 Other requests for this document shall be referred to AFRL/RQQD.
+完成 MATLABBallisticMover 类构造函数的实现（位于
+
+MATLABBallisticMover.cpp 文件中）。
+
+每个 mrow 类在构造时都需要指定大小。
+
+添加一行代码来构造mwInputOrientation成员变量。
+
+mwInputOrientation 构造函数需要四个参数：
+
+1. 行数（number of rows）：  
+2. 列数（number of columns），  
+3. 矩阵的数据类型（data type of the matrix），以及  
+4. 矩阵的复杂性（complexity of the matrix，详见 MATLAB® 文档）。
+
+对于mwInputOrientation成员变量：
+
+- 它将有3行，1列，  
+- 数据类型为mxDOUBLE_CLASS,  
+复杂性类型为mxREAL。
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
+
+Other requests for this document shall be referred to AFRL/RQQD.
+
+49
+
+![](images/0abc1cd5d945620193db123515e8ecd4e62cf135feb7c7262624af69d7cd461b.jpg)

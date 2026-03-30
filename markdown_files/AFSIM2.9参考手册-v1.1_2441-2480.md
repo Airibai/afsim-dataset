@@ -1,8 +1,3 @@
-![](images/4d0ede67a5229c0cde79779d3079e40ac2ab149759edf5c92e196353453963e8.jpg)  
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
-
-![](images/9fe426f981355f8293b2da948f175c0b02c49e1bc8f6485ba66314ca6635dc31.jpg)
-
 # UNCLASSIFIED 练习2-任务1 TrainingPlugin.cpp
 
 42
@@ -1466,3 +1461,25 @@ Plugin.cpp
 
 1. 重写 GetPreferencesWidget() 方法，并返回 PrefWidget 成员的 QList。  
 2. 重写 GetActions() 方法，并返回存储在成员变量 mActions 中的 QList<wkf::Actions>。
+```cpp
+QList<wkf::PrefWidget> WarlockTraining::Plugin::GetPreferencesWidgets() const
+{
+    // EXERCISE 2 TASK 1a
+    // return a QList that contains the PrefWidget.
+    // This will add the widget to the Preferences display.
+    return { mPrefWidget };
+}
+QList<wkf::Action> WarlockTraining::Plugin::GetActions() const
+{
+    // EXERCISE 2 TASK 1b
+    // return the QList of Actions. This will add the actions to the Preferences' KeyBinding menu.
+    return mActions;
+} 
+```
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+# UNCLASSIFIED
+
+![](images/92f616129c1b6cbdc3bb9cee49153231e8ebe4f1db6527a74f98c1e50768aa1c.jpg)
+

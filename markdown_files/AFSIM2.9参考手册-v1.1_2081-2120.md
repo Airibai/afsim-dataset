@@ -1,13 +1,3 @@
-在文件TricorderSensor.cpp中：
-
-- 在 ScriptTricorderSensorClass 构造函数中，添加一个 AddMethod 语句，将 LifeForm.TypeEntry_2 关联为重载脚本方法 LifeForm.TypeEntry 的实现类。
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQDD.
-
-113
-
-![](images/5631e896c7958d34bb670fbc6d4eda0762aa0d16809c9f7f16ae73aaac5ef87d.jpg)
-
 # 传感器练习3—任务3解决方案
 
 # TricorderSensor.cpp
@@ -1492,3 +1482,24 @@ app.InitializeSimulation(simPtr.get())
 （其中aSimulation $\equiv^{*}\mathrm{simPtr.get()}$ ）
 
 Note: RegisterPhaserWeapon does not override SimulationCreated, so this call has no effect 55
+![](images/bc71294f2bb89ffdc18dc7bcb91979616190510aeb9ff757c806538b2814417f.jpg)
+
+Mission 通过执行以下代码初始化模拟：
+
+app.InitializeSimulation(simPtr.get())
+
+- InitializeSimulation 调用: aSimPtr->Initialize()
+
+：
+
+- 接下来, WsfSimulation::Initialize 调用:
+
+WsfObserver::SimulationInitializing(this)
+
+- 这会通知所有已注册的事件观察者，模拟即将被初始化。
+
+注意：我们没有创建任何模拟观察者，因此该通知没有任何效果。
+
+56
+
+![](images/da2c7cf0b20a2ddab388340b1cd790e767f222c7b91c445a0e6fba7adefea730.jpg)

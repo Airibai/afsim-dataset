@@ -1,26 +1,3 @@
-默认值：0.0 dB
-
-masking_factor <dbratio-value>
-
-指定当 gain_control_method 设置为 masking 时，将添加到计算出的最小检测 repeaterfactor 的因子（以 dB 为单位，绝对值相乘）。如果此输入在 system_type_data 输入块中指定，则它特定于一种系统类型，否则，此输入被定义为用于未定义系统类型的“默认”数据。
-
-默认值：0.0 dB
-
-system_type_data <system-type-name> … end_system_type_data
-
-这是一个输入块，用于提供特定系统类型（例如，SENSOR-TYPE, JAMMER-TYPE）所需的数据，以实现给定系统类型的技术。可以为未定义的系统类型设置默认数据，使用“default”字符串作为系统类型。
-
-```c
-system_type_data <system-type-name> electronic_warfare-effect Commands WSF_RADIUS_EFFECT Commands repeater Effect_control_method <repeater-control-method> gain_control_method <gain-control-method> repeater_factorlimits <min-repeater-factor> <max-gain-factor> desired=false_target_rcs <area-value> desired_jammer_to_noise <dbratio-value> desired_jammer_to_signal <dbratio-value> minimumdetect_factor <dbratio-value> masking_factor <dbratio-value>   
-end_system_type_data 
-```
-
-□ <system-type-name>
-
-这是一个字符串输入，表示以下数据适用的系统类型，有效值为[system-type-name |“default”]。默认数据用于未指定的系统类型，如果未定义，则不会对给定的系统类型应用任何效应。
-
-注意：此输入通常由 electronic_attack 定义使用，以指定不同的传感器类型数据。它可能由 electronic_protect 定义使用，以指定干扰器类型数据输入，但通常数据仅在此输入块外输入，并应用于所有干扰器类型的 electronic_protect 效应。
-
 # 3.5.5.10.4.19. 随机脉冲干扰 WSF_RPJ_EFFECT
 
 ```txt
@@ -2029,3 +2006,10 @@ number_of_iterations <value>
 指定将执行的蒙特卡罗迭代次数以创建概率表。
 
 默认值： 1000
+magnification <value>指定传感器的放大倍率。默认值： 1.0  
+apparent_half_angle_FOV <value> <angle-units>指定传感器的视场半角。默认值： 45.0 度  
+minimum_resolution <value> <angle-units>指定传感器的最小分辨率。默认值： 0.001 sr  
+contrast_gain <value>指定传感器的对比增益。默认值： 1.0  
+ocular_integration_level <value> <angle-units>指定传感器的眼部集成水平。默认值： 0.05 度
+
+这些命令和参数帮助配置 WSF_OPTICAL_SENSOR 的性能，以便在不同的环境条件下进行有效的目标检测和跟踪。

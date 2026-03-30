@@ -1,19 +1,3 @@
-- 对于每个仿真扩展，仿真会调用 Initialize 方法。  
-- 完成 UDP_Observer::Initialize 的实现:
-
-- 创建一个新的 GenUDP_Connection:
-
-- 使用 new 操作符创建一个指向新 GenUDP_Connection 的指针。  
-- 将 GenUDP_Connection 指针分配给类成员变量 mConnectionPtr。  
-- 使用 GenUDP_Connection 的 Init() 方法初始化连接（传入成员变量 mAddress 和 mPort）。  
-- 请参考 Visual Studio 解决方案中 genio 项目的头文件 GenUDP_Connection.hpp 以确保语法正确。
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
-
-58
-
-![](images/8f7898667d472541468533e3766b73d3e47d9593120b29c65dbe5cdb90105ab3.jpg)
-
 # Observer 练习—任务5 解决方案
 
 # UDP_Observer.cpp
@@ -1719,3 +1703,22 @@ app.InitializeSimulation(simPtr.get())
 接着调用aSimulation.RegisterExtension(ut::make_unqiue<CommLab::Interface>))
 
 (where aSimulation $\equiv^{*}\mathrm{simPtr.get()}$
+![](images/96696240aa57c85366cb9cf58439e38e8b8ed1c2276a3cd898990b953bffa9a9.jpg)
+
+Mission 通过执行以下代码创建仿真:
+
+app.InitializeSimulation(simPtr.get())
+
+- InitializeSimulation 调用: aSimPtr->Initialize()
+
+：
+
+- 下一步, WsfSimulation::Initialize 调用:
+
+WsfObserver::SimulationInitializing(this)
+
+- 这会通知所有注册的事件观察者，仿真即将被初始化
+
+注意：Interfaced 类并没有重写这个方法，因此我们对这个通知不做任何处理。
+
+![](images/95911c3ed24e85f9f8389c7a93b0eebd6370e32e82f4f3f2fab351724f15ae7b.jpg)

@@ -1,23 +1,3 @@
-![](images/96696240aa57c85366cb9cf58439e38e8b8ed1c2276a3cd898990b953bffa9a9.jpg)
-
-Mission 通过执行以下代码创建仿真:
-
-app.InitializeSimulation(simPtr.get())
-
-- InitializeSimulation 调用: aSimPtr->Initialize()
-
-：
-
-- 下一步, WsfSimulation::Initialize 调用:
-
-WsfObserver::SimulationInitializing(this)
-
-- 这会通知所有注册的事件观察者，仿真即将被初始化
-
-注意：Interfaced 类并没有重写这个方法，因此我们对这个通知不做任何处理。
-
-![](images/95911c3ed24e85f9f8389c7a93b0eebd6370e32e82f4f3f2fab351724f15ae7b.jpg)
-
 # UNCLASSIFIED AFSIM插件与扩展
 
 # AFSIM 任务启动序列
@@ -1521,3 +1501,19 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 - WsfApplicationExtension - 创建新脚本类型或利用仿真扩展或场景扩展的扩展需要继承此类。
 
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.
+- 应用程序、场景和仿真都可以被“扩展”
+
+- 应用扩展由应用程序拥有  
+- 代表可以添加到应用程序的可选功能  
+- 如果需要新的脚本类型（传感器、武器、组件、移动器），则使用应用扩展  
+- 这是在AFSIM中注册所有扩展的入口点  
+- 如果要创建场景扩展或仿真扩展，则需要应用扩展  
+- 如果我们正在创建新的脚本，或者需要注册新的插件，我们也需要应用扩展  
+- 我们将使用默认的应用扩展，因为我们只需要注册场景和仿真扩展  
+- 请参见文件XIO PluginRegistration.cpp
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.
+
+28
+
+![](images/1aa3fea882688b2ee8abd56b10ca8ecbd2d7fa518c5854b207cc5d634ca59829.jpg)

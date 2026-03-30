@@ -1,13 +1,3 @@
-- AFSIM 提供了处理和支持仿真执行、常规计算以及基本功能的能力：
-
-- 场景管理 提供场景加载器和对象，用于读取所有场景输入数据，并维护类型列表。  
-仿真管理提供仿真加载器和对象。  
-时间管理提供时钟源。  
-- 事件管理 提供发布/订阅功能，使仿真观察者能够注册仿真事件。  
-地理空间数据管理提供地形和视线数据。  
-- 插件管理 允许AFSIM在运行时找到插件并将其加载到内存中。  
-实用工具提供地球模型、坐标系、数学运算等功能。
-
 # 基础设施
 
 想定管理
@@ -1815,3 +1805,38 @@ UNCLASSIFIED
 ![](images/54ce6294aa20533b848395a3f089f3073a9defa0c52038755d590d5cb9a9baaa.jpg)
 
 <table><tr><td>Folder</td><td>Purpose</td></tr><tr><td>../wizard</td><td>在: ../afsim/wizard 或 ../swdev/src/wizard</td></tr><tr><td>exec</td><td>Mystic 的主函数，在运行时执行。</td></tr><tr><td>lib</td><td>包含 Mystic 的布局、地图定义、插件管理器等代码。</td></tr><tr><td>plugins</td><td>Mystic 支持的所有插件。</td></tr><tr><td>python</td><td>用于运行各种示例的 Python 代码。</td></tr></table>
+CMake 生成构建文件的说明
+
+- CMake生成的文件类型
+
+CMake会根据操作系统生成不同的构建文件：
+
+- 在Linux系统上，CMake生成Makefiles。
+
+- 在Windows系统上，CMake生成Visual Studio项目文件。
+
+选择构建目录
+
+选择一个位于源代码目录之外的构建目录。这种做法有以下好处：
+
+- 将构建文件和源代码文件分开，保持目录结构清晰。
+
+-避免版本控制工具（如Git）提示将构建文件添加到源代码管理中。
+
+- 标准目录结构
+
+我们使用以下标准目录布局：
+
+-“src”：顶级代码目录，存放源代码文件。
+
+- "build": 构建目录, 存放生成的构建文件。
+
+- "dependencies": 依赖目录，包含第三方工具和 vtk resources。
+
+- 这种目录结构有助于保持项目的组织性和可维护性，同时避免构建文件污染源代码目录。
+
+swdev/ /src/ - code directory /core/ /tools/ /wizard/ /dependencies/ /3rdParty - directory for $3^{\mathrm{rd}}$ Party tools /resources - directory for vtk-resources /build/ - build directory /build_mission/ /buildobserver exercice/
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
+
+Other requests for this document shall be referred to AFRL/RQQD.

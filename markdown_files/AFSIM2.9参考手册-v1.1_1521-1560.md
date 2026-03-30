@@ -1,13 +1,3 @@
-Warlock中很多特性和Mystic以及Wizard是相似的.  
-‘View'菜单用于打开不同的功能窗口  
-将Platform Movement打 开
-
-![](images/654a64d7fd90899d2d7f06d36b8921917767a8537fef3c7ed24a3ff68949d2f0.jpg)
-
-![](images/b255ae302a286bed834d13d4d6c683e100b9b017a789b98b77861a90459cc4b1.jpg)
-
-DISTRIBUTioNC.Distributionauthorized to U.S.Government Agenciesandtheircontractors,9-Aug-19. Otherrequestsforthisdocument shallbereferredtoAFRL/RQQD.
-
 # UNCLASSIFIED
 
 23
@@ -1496,3 +1486,27 @@ DISTRIBUTioNC.Distributionauthorizedto U.S.Government Agenciesand their contract
 ![](images/4974f6025b54384bc50dec76eeb727043ea8d117a4cdd12ac3f06a7ded511c5d.jpg)
 
 DISTRIBUTioNC.Distributionauthorized to U.S.GovernmentAgenciesandtheircontractors,9-Aug-19. Otherrequestsforthisdocument shallbereferredtoAFRL/RQQD.
+- 平台可以有组件，类似传感器、处理器、运动  
+- 平台可以有属性，类似图标和阵  
+- 平台特性是平台对象的一个属性
+
+- 可以在平台内部定义  
+- 也可以外部定义平台引用
+
+- 特性定义可以包含以下内容：
+
+空间属性：
+
+- 方位角（水平面内的角度）  
+- 仰角（垂直面内的角度）
+
+- 电子属性：
+
+频率   
+极化（电波方向）
+
+状态
+
+![](images/12f35c4d9888b1bcfa9749bfe1fabcbde6ebf0bd151d162cbf9649eea6362b06.jpg)
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.

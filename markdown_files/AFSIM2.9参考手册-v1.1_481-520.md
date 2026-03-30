@@ -1,117 +1,3 @@
-发射机的峰值功率输出。
-
-默认值：无。必须指定 power 或 powers 之一。如果指定了多个，则使用最后一个指定的。
-
-powers … end_powers
-
-允许定义发射机的频率依赖峰值功率输出。
-
-格式：
-
-```txt
-powers  
-frequency <frequency-value-1> <power-value-1>  
-frequency <frequency-value-2> <power-value-2>  
-...  
-frequency <frequency-value-n> <power-value-n>  
-endpowers 
-```
-
-算法：
-
-频率大于或等于 frequency-value-m 且小于 frequency-value- $m { + 1 }$ 时使用 power-value-m。
-
-频率小于 frequency-value-1 时使用 power-value-1。
-
-频率大于或等于 frequency-value-n 时使用 power-value-n。
-
-默认值：无。必须指定 power 或 powers 之一。如果指定了多个，则使用最后一个指定的。
-
-注意：条目将按频率递增顺序排序。
-
-propagation_model <derived-name>   
-propagation_model <base-name> …commands… end_propagation_model
-
-指定传播模型。有关可用传播模型及其配置的信息，请参见全局命令 3.5.5.6 传播模型propagation_model。
-
-默认值：无（无传播效果）
-
-pulse_compression_ratio <db-ratio-value>
-
-指定由于脉冲压缩/编码技术带来的增益。
-
-默认值：0dB（无脉冲压缩）
-
-注意：这不会改变发射信号的有效辐射功率。脉冲压缩的效果在信号接收时应用。它在发射机上定义，因为压缩/编码实际上发生在那里。
-
-pulse_repetition_frequency <frequency-value>   
-pulse_repetition_interval <time-value>
-
-指定脉冲发射机的脉冲速率或脉冲间隔，可以使用以下方法之一：
-
-每秒的平均脉冲数（pulse_repetition_frequency）。
-
-脉冲前沿之间的平均时间（pulse_repetition_interval）。
-
-默认值：pulse_repetition_frequency 0 Hz
-
-注意：如果指定了非零值，则必须指定非零 pulse_width。
-
-pulse_repetition_frequencies … end_pulse_repetition_frequencies   
-pulse_repetition_intervals … end_pulse_repetition_intervals
-
-指定脉冲发射机的脉冲速率或脉冲间隔列表，可以使用以下方法之一：
-
-每秒的平均脉冲数（pulse_repetition_frequencies … end_pulse_repetition_frequencies）。
-
-脉冲前沿之间的平均时间（pulse_repetition_intervals … end_pulse_repetition_intervals）。
-
-```txt
-pulse_repetition_frequencies prf_id <id><frequency-value> 
-```
-
-```txt
-...   
-end_pulse_repetition_frequencies   
-pulse_repetition_intervals pri_id <id> <time-value> ...   
-end_pulse_repetition_intervals 
-```
-
-□ <id>：用于添加多个脉冲重复频率的有序输入 ID，范围为[1,N]。  
-□ <frequency-value>：给定<id>的脉冲重复频率值。   
-□ <time-value>：给定<id>的脉冲重复间隔值。
-
-默认值： $0 H z$ ，未定义
-
-注意：如果指定了非零值，则必须指定非零 pulse_width。
-
-pulse_width <time-value>
-
-指定脉冲发射机的平均脉冲宽度（以时间单位）。
-
-默认值：0 秒
-
-注 意 ： 如 果 指 定 了 非 零 值 ， 则 必 须 指 定 非 零 pulse_repetition_frequency 或pulse_repetition_interval。
-
-use_peak_power <boolean-value>
-
-当设置为 true 时，切换此发射机以在所有适用的内部计算中使用峰值功率，并通过扩展，所有由此发射机预测的结果交互。当设置为 false 时，使用平均功率。
-
-默认值：False（使用平均功率）
-
-alternate_frequency <id> <frequency-value>
-
-指定备用频率，当检测到干扰时，通信设备与 jamming_perception_timeout 和jamming_perception_threshold 结 合 使 用 ， 或 WSF_RADAR_SENSOR 与jamming_perception_timeout 、 jamming_perception_threshold 和 electronic_protectWSF_AGILITY_EFFECT 技 术 结 合 使 用 。 对 于 WSF_RADAR_SENSOR 类 型 ， 可 以 通 过randomize_radar_frequencies 命令在模拟初始化期间随机选择频率。可以输入多个具有连续递增<id>的条目。
-
-□ <id>：用于添加多个备用频率的有序输入 ID，范围为[1,N]。  
-□ <frequency-value>：给定<id>的备用频率值。
-
-electronic_attack … end_electronic_attack
-
-定义发射机的电子攻击能力。有关详细信息，请参见 3.5.5.8.1 电子攻击模型electronic_attack。
-
-默认值：无电子攻击能力。
-
 # 3.5.5.8.1. 电子攻击模型 electronic_attack
 
 参见 3.5.5.10 电子战模型
@@ -1716,3 +1602,25 @@ desired_jammer_to_signal <dbratio-value>
 minimum_detect_factor <dbratio-value>
 
 指定当 gain_control_method 设置为 minimum_detect 时，将添加到计算出的最小检测repeater factor 的因子（以 dB 为单位，绝对值相乘）。如果此输入在 system_type_data 输入块中指定，则它特定于一种系统类型，否则，此输入被定义为用于未定义系统类型的“默认”数据。
+默认值：0.0 dB
+
+masking_factor <dbratio-value>
+
+指定当 gain_control_method 设置为 masking 时，将添加到计算出的最小检测 repeaterfactor 的因子（以 dB 为单位，绝对值相乘）。如果此输入在 system_type_data 输入块中指定，则它特定于一种系统类型，否则，此输入被定义为用于未定义系统类型的“默认”数据。
+
+默认值：0.0 dB
+
+system_type_data <system-type-name> … end_system_type_data
+
+这是一个输入块，用于提供特定系统类型（例如，SENSOR-TYPE, JAMMER-TYPE）所需的数据，以实现给定系统类型的技术。可以为未定义的系统类型设置默认数据，使用“default”字符串作为系统类型。
+
+```c
+system_type_data <system-type-name> electronic_warfare-effect Commands WSF_RADIUS_EFFECT Commands repeater Effect_control_method <repeater-control-method> gain_control_method <gain-control-method> repeater_factorlimits <min-repeater-factor> <max-gain-factor> desired=false_target_rcs <area-value> desired_jammer_to_noise <dbratio-value> desired_jammer_to_signal <dbratio-value> minimumdetect_factor <dbratio-value> masking_factor <dbratio-value>   
+end_system_type_data 
+```
+
+□ <system-type-name>
+
+这是一个字符串输入，表示以下数据适用的系统类型，有效值为[system-type-name |“default”]。默认数据用于未指定的系统类型，如果未定义，则不会对给定的系统类型应用任何效应。
+
+注意：此输入通常由 electronic_attack 定义使用，以指定不同的传感器类型数据。它可能由 electronic_protect 定义使用，以指定干扰器类型数据输入，但通常数据仅在此输入块外输入，并应用于所有干扰器类型的 electronic_protect 效应。

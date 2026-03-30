@@ -1,20 +1,3 @@
-central_body … end_central_body：指定用于模拟平台的中心体及相关椭球模型。
-
-<central-body-type>的选项包括：
-
-▫ earth_wgs72（地球世界大地测量系统 1972）  
-□ earth_wgs84（地球世界大地测量系统 1984）  
-□ earth_egm96（地球重力模型 1996）  
-□ moon（月球）  
-□ sun（太阳）  
-□ jupiter（木星）
-
-默认值：earth_wgs84
-
-polar_offset_angles <angle-value> <angle-value>：指定中心体的极偏移角（分别为 x_p 和y_p），相对于 WCS（ITRS）坐标系的天体中间极（CIP）。提供这些值（约为十分之一角秒）可以实现 ECI 和 WCS 坐标之间的非常高精度转换。默认值：0.0rad0.0rad
-
-注意：WCS 到 LLA 的转换受中心体选择的影响，以及在惯性（ECI）坐标转换中计算的恒星运动变换。
-
 # 4.11.2. 大气湍流模型 Turbulence model
 
 在红外和光学波长中考虑大气湍流对 AFSIM 激光传播非常重要，因为它会产生平均光束扩展效应。这种效应独立于衍射和波前误差等其他因素，减少了影响高能激光目标或激光通信接收器的平均光束功率。
@@ -1583,3 +1566,6 @@ event_output、csv_event_output 和观察者扩展，允许捕获有关网络交
 如果抽签大于阈值，攻击者将不知道攻击的状态。
 
 6) 发出 WsfDraw 命令以记录可视化数据。
+7) 根据前面步骤确定的状态，调用 CyberAttackSucceeded 或 CyberAttackFailed 观察者回调。  
+8) 如果攻击被标记为“失败”，则停止网络生命周期的进一步执行。
+

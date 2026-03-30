@@ -1,3 +1,22 @@
+# 命名规则
+
+![](images/52ff8e03cb1b557aa8954b7b5919c5a4b066b25d776fc8e2db97e10b647238f2.jpg)
+
+- 可以在其他地方引用的语法语法
+
+```typescript
+rule time-unit {
+    seconds | second | secs | sec | s | minutes | minute | mins | min | m | hours | hour
+    | hrs | hr | h | milliseconds | millisecond | msec | msec | ms | microseconds | microsecond
+    | usesc | usec | us | nanoseconds | nanosecond | nsecs | nsec | ns
+    | days | day 
+```
+
+这样使用:
+
+(value Time { <real> <time-unit> }
+
+- 代表可选项
 - 结合语法和数据结构的定义。
 
 ```txt
@@ -1648,3 +1667,8 @@ $ cmake --build . --target install -- -j12
 
 - 确认“Hello World!!”操作出现在“View”菜单中。  
 - 确认“Hello World!!!”停靠窗口（Dock Widget）中显示的文本字符串为“Hello World”。
+![](images/4d0ede67a5229c0cde79779d3079e40ac2ab149759edf5c92e196353453963e8.jpg)  
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+![](images/9fe426f981355f8293b2da948f175c0b02c49e1bc8f6485ba66314ca6635dc31.jpg)
+

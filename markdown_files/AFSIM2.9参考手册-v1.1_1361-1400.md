@@ -1,11 +1,3 @@
-息选项。
-
-ReloadShaders：重新加载应用程序使用的所有 GLSL 着色器。这将捕获着色器源文件的实时更改。  
-Toggle Graphics Stats：切换显示帧率和其他诊断图形显示。  
-TogglePolygonMode：在填充、线框和顶点之间切换多边形绘制模式。  
-Reload Model Database：这将重新加载所有 models.txt 文件，有效地捕获对文件所做的编辑。  
-Extended Draw Browser：在 WsfDraw 浏览器中显示图层的内容。
-
 # 5.3.2.2.6. 帮助菜单 Help - Mystic
 
 帮助 - Mystic
@@ -944,3 +936,4 @@ P6DOFMover 和其相关插件已经被弃用，取而代之的是新的 SixDOFMo
 # 5.3.2.16.Scripted Platform Details - Mystic
 
 平台详情对话框可能会显示通过脚本使用 WsfEventPipe.Record 发布的数据。可以通过右键单击字段并选择一个组来绘制这些数据。
+![](images/e76438927970668e57b55896d83232134d94dcfe4f386ab475f22148d6adc8df.jpg)

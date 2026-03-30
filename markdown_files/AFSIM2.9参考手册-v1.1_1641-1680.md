@@ -1,19 +1,3 @@
-- Fire是处理里的一个方法
-
-- 如果开火任务分配成功则返回真
-
-processors/single_large_sam Tactics.txt
-
-![](images/b87e7915793ff9c5b6e374fb578cfab30edf4e41f49f0a6ecb193da2651a5619.jpg)
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.
-
-29
-
-![](images/70a77d6dcfe3e9cdaa4a6d064368b23bc8d3429f0e83e9be7917a19a36564177.jpg)
-
-UNCLASSIFIED
-
 # 第三阶段-侦察阶段（WAIT）
 
 ![](images/357b94440d5af339f4b1560f4a6dc2629052691d3d36f90e8a6f7a725eb032e9.jpg)
@@ -1507,3 +1491,10 @@ Other requests for this document shall be referred to AFRL/RQQD.
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
 
 Other requests for this document shall be referred to AFRL/RQQD.
+![](images/9094d4934f59e51f45db5fed87daa6848986744594d3b1b3f65ececc8d3d68da.jpg)
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+![](images/a349ede8a915c84a65ca0322ff3b1e8513eec9b14f9a15f031fe17c9d1fc56cb.jpg)
+
+UNCLASSIFIED

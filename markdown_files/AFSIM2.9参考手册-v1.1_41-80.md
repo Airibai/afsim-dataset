@@ -1,24 +1,3 @@
-“节点”，表示状态  
-“弧线”，连接节点并表示转换规则。
-
-在 WSF 中，“状态”可以表示几乎任何东西：
-
-等待某物进入范围。  
-等待传感器获取。  
-等待武器引爆。
-
-在以下示例中，显示了一个简单的状态图，其中有节点（标记为 A到 D）和连接节点的弧线，表示转换规则。
-
-![](images/a60f8689429f68cef21ad275a5b170e4aead436f6c36005ceb28c39c15271b3e.jpg)
-
-状态 A 是起点。如果满足转换规则，它将转换到 B 。如果满足所有转换规则，它最终将转换到状态 C ，然后是 D 。在状态 B 和 C 时，如果某些转换规则不满足，它可以返回到 A 。可以用状态机来制作雷达系统的示例。状态 A 可以是搜索模式。状态 B 可以表示初始获取模式。状态 C 可以表示次级获取模式。状态 D 可以是跟踪模式。
-
-# 状态机输入
-
-以下图形显示了如何在 WSF 中的任务处理器内定义状态机。
-
-![](images/8f5863bd8c68ac6660be7ad26d51b2958d70f9319ec987ec4cf17735e90b7f14.jpg)
-
 # 任务处理器中可用的预定义变量
 
 任务处理器可以访问一些预定义的变量，以简化脚本的创建，如下所示：
@@ -1629,4 +1608,14 @@ MATH.Pi()
 
 ```txt
 ('(' <type>'') <expression> 
+```
+例如：
+
+```matlab
+Object obj = 'my string';  
+string str = (string)obj;  
+int i = 99;  
+double d = (double)i;  
+WsfMessage msg = GetControlMessage();  
+((WsfControlMessage)msg).SetResource('my_resource'); 
 ```

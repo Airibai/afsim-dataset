@@ -1,16 +1,3 @@
-- 检查 SensorPluginRegistration.cpp
-
-- 审查并理解 WsfPluginSetup 函数。
-
-```cpp
-SENSOR_EXERCISE exporting void WsfPluginSetup(WsfApplication& aApplicationPtr)  
-{  
-    aApplicationPtr.RegisterExtension("tricorder_sensorregistration", ut::make_unique<TricorderSensorRegistration>();  
-} 
-```
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQDD.
-
 # UNCLASSIFIED
 
 # 扩展
@@ -1506,3 +1493,12 @@ UT DEFINEScriptMethod(LifeFormTypeEntry_2, 2, "string", string, int)
         aReturnVal SETString(lifeFormEntry.GetString());  
     } 
 ```
+在文件TricorderSensor.cpp中：
+
+- 在 ScriptTricorderSensorClass 构造函数中，添加一个 AddMethod 语句，将 LifeForm.TypeEntry_2 关联为重载脚本方法 LifeForm.TypeEntry 的实现类。
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQDD.
+
+113
+
+![](images/5631e896c7958d34bb670fbc6d4eda0762aa0d16809c9f7f16ae73aaac5ef87d.jpg)

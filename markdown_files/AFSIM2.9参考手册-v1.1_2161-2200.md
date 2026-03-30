@@ -1,32 +1,3 @@
-完成 MATLABBallisticMover 类构造函数的实现（位于
-
-MATLABBallisticMover.cpp 文件中）。
-
-每个 mrow 类在构造时都需要指定大小。
-
-添加一行代码来构造mwInputOrientation成员变量。
-
-mwInputOrientation 构造函数需要四个参数：
-
-1. 行数（number of rows）：  
-2. 列数（number of columns），  
-3. 矩阵的数据类型（data type of the matrix），以及  
-4. 矩阵的复杂性（complexity of the matrix，详见 MATLAB® 文档）。
-
-对于mwInputOrientation成员变量：
-
-- 它将有3行，1列，  
-- 数据类型为mxDOUBLE_CLASS,  
-复杂性类型为mxREAL。
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
-
-Other requests for this document shall be referred to AFRL/RQQD.
-
-49
-
-![](images/0abc1cd5d945620193db123515e8ecd4e62cf135feb7c7262624af69d7cd461b.jpg)
-
 # Mover练习2 — 任务1 解决方案
 
 # MATLABballisticMover.cpp
@@ -1696,4 +1667,17 @@ class myScenarioExtension: public WsfScenarioExtension
 - Complete: 从 WsfScenario::LoadComplete 调用，通知扩展所有场景输入已被处理  
 - Complete2: 在所有扩展的 Complete 方法被调用后调用  
 - SimulationCreated: 从 WsfSimulation::Initialize 调用，如果场景扩展需要一个关联的仿真扩展，这个方法可以注册仿真扩展  
-AlwaysCreate: 确定扩展是可选的还是必需的
+AlwaysCreate: 确定扩展是可选的还是必需的- 要扩展一个场景，您必须创建一个继承自 WsfScenarioExtension 类的类
+
+# class ComponentTypesRegistration: public WsfScenarioExtension
+
+- 您必须重写以下方法:
+
+- AddedToScenario：接收扩展被添加到场景的通知，通常用于注册额外的组件类型对象和工厂
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+49
+
+![](images/b3b6c4e0be118aebd58ff2e13c29fe37308dacde9e1586cae97ce9d0199e5127.jpg)
+

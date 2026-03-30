@@ -1,14 +1,3 @@
-例如：
-
-```matlab
-Object obj = 'my string';  
-string str = (string)obj;  
-int i = 99;  
-double d = (double)i;  
-WsfMessage msg = GetControlMessage();  
-((WsfControlMessage)msg).SetResource('my_resource'); 
-```
-
 # <statement> 语句
 
 语句定义为以下之一：
@@ -1654,6 +1643,13 @@ Cl.8- 多态类应具有虚析构函数。
 
 示例：
 
-```txt
+```cpp
 class Base{ 
+public: \~Base(); // 析构函数需要是虚函数！ //...   
+};   
+class SubClass : public Base   
+{ public: \~SubClass(); // ...   
+}；   
+void FinishWithObject(Base\* aObjectPtr)   
+{ delete aObjectPtr; //无论“aObject”的运行时类型是什么，这都会调用\~Base(）!!
 ```

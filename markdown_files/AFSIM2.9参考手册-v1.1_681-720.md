@@ -1,8 +1,20 @@
-<table><tr><td></td><td>eccentricity 0.2
-mean_anomaly 255 deg
-inclination 30 deg
-raan 120 deg
-argument_of_periapsis 80 deg
+# 轨道状态命令
+
+命令 orbital_state...end_orbital_state  
+解释 指定轨道状态的形式为一个 epoch 或 epoch_date_time，并且包含以下之一：足够的轨道元素命令位置和速度向量包含两行元素（TLE）的轨道命令块（当使用WSF_NORAD_SPACE_MOVER时）position <real><real><length-units>设置空间移动器的初始位置。此命令必须与速度命令一起使用。velocity <real><real><speed-units>设置空间移动器的初始速度。此命令必须与位置命令一起使用。注意事项位置和速度输入必须按顺序提供，速度输入必须紧跟在位置输入之后。
+# 示例
+```txt
+//Example: Orbital elements declaration
+platform test-oe WSFPLATFORMadd 
+mover WSF_SPACE_MOVOR
+orbital_state
+    epoch 2021245.18563
+    semimajor_axis 10000 km 
+    eccentricity 0.2
+    mean_anomaly 255 deg
+    inclination 30 deg
+    raan 120 deg
+    argument_of_periapsis 80 deg
 end_orbital_state
 end_mover
 endPLATFORM
@@ -29,28 +41,40 @@ orbital_state
     end_orbit
     end_orbital_state
     end_mover
-    endPLATFORM</td></tr><tr><td>命令</td><td>epoch [&lt;epoch-value&gt; | platform creation_epoch]</td></tr><tr><td>解释</td><td>指定与轨道元素有效的参考历元相对应的历元。
+    endPLATFORM
+```
+<table><tr><td>命令</td><td>epoch [&lt;epoch-value&gt; | platform creation_epoch]
+</td></tr><tr><td>解释</td><td>指定与轨道元素有效的参考历元相对应的历元。
 如果指定了 platform creation_epoch, 初始历元将设置为平台的创建时间。
-示例</td></tr><tr><td></td><td>//Example: platform creation_epoch usage
+</td></tr></table>
+
+示例
+```txt
+//Example: platform creation_epoch usage
 //In this case, initial epoch will be set to 1 hour after simulation start</td></tr><tr><td></td><td>platform test-oe WSF PLATFORM
 creation_time 1 hour
 add mover WSF_SPACE_MOVER
 orbital_state
     epoch platform creation_epoch
-semimajor_axis 10000 km
-eccentricity 0.2
-mean_anomaly 255 deg
-inclination 30 deg
-raan 120 deg
-argument_of_periapsis 80 deg</td></tr><tr><td></td><td>end_orbital_state
+    semimajor_axis 10000 km
+    eccentricity 0.2
+    mean_anomaly 255 deg
+    inclination 30 deg
+    raan 120 deg
+    argument_of_periapsis 80 deg
+end_orbital_state
 end_mover
-endPLATFORM</td></tr><tr><td>命令</td><td>epoch_date_time &lt;month&gt;&lt;day-of-month&gt;&lt;year&gt;&lt;hh:mm:ss&gt;</td></tr><tr><td>解释</td><td>指定与轨道元素有效的参考历元相对应的日期和时间。
-注意 月份使用如下三字符格式表示：jan | feb | mar | apr | may | jun | jul | aug | sep | oct | nov | dec
-一天中的时间参考 UT 午夜，并使用 24 小时制。</td></tr></table>
+endPLATFORM
+```
+<table><tr><td>命令</td><td>epoch_date_time &lt;month&gt;&lt;day-of-month&gt;&lt;year&gt;&lt;hh:mm:ss&gt;
+</td></tr><tr><td>解释</td><td>指定与轨道元素有效的参考历元相对应的日期和时间。注意 月份使用如下三字符格式表示：jan | feb | mar | apr | may | jun | jul | aug | sep | oct | nov | dec一天中的时间参考 UT 午夜，并使用 24 小时制。
+</td></tr></table>
 
-轨道元素命令   
+# 轨道元素命令   
 
-<table><tr><td>命令</td><td>designator &lt;string-value&gt;</td></tr><tr><td>解释</td><td>指定空间移动器的标识符。默认值:“00001A”注意 如果使用 TLE,标识符由 TLE 卫星国际标识符在第一行提供。</td></tr><tr><td>命令</td><td>eccentricity &lt;real-value&gt;</td></tr><tr><td>解释</td><td>指定轨道的偏心率。指定的值必须大于或等于零(圆形轨道)。默认值:0注意 对于 WSF_SPACE_MOV 和 WSF_NORAD_SPACE_MOV,偏心率还必须小于 1.0(抛物线轨道)。</td></tr><tr><td>命令</td><td>semimajor_axis &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的半长轴。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,半长轴成为圆的半径。注意 此输入等同于 revolutions_per_day,因为两者通过开普勒第三定律相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>revolutions_per_day &lt;real-value&gt;</td></tr><tr><td>解释</td><td>指定卫星每天绕地球的圈数。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 此输入等同于 semiajor_axis,因为两者通过开普勒第三定律相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>periapsis_radius &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的近地点半径。这是卫星与中心体中心之间的最小距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,近地点半径等于远地点半径和半长轴。注意 此输入等同于 periapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>apoapsis_radius &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的远地点半径。这是卫星与中心体中心之间的最大距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,远地点半径等于近地点半径和半长轴。注意 此输入等同于 apoapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>periapsis_altitude &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的近地点高度。这是卫星与中心体表面之间的最小距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,近地点高度等于远地点高度。注意 此输入等同于 periapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>apoapsis_altitude &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的远地点高度。这是卫星与中心体表面之间的最大距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,远地点高度等于近地点高度。注意 此输入等同于 apoapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>raan | right ascension_ofascending_node &lt;angle-value&gt;</td></tr><tr><td>解释</td><td>指定升交点的赤经(“raan”)。这是沿天赤道从春分点(赤经角)逆时针测量的卫星从南向北穿过赤道(升交点)的角度。
+<table><tr><td>命令</td><td>designator &lt;string-value&gt;
+</td></tr><tr><td>解释</td><td>指定空间移动器的标识符。默认值:“00001A”注意 如果使用 TLE,标识符由 TLE 卫星国际标识符在第一行提供。
+</td></tr><tr><td>命令</td><td>eccentricity &lt;real-value&gt;</td></tr><tr><td>解释</td><td>指定轨道的偏心率。指定的值必须大于或等于零(圆形轨道)。默认值:0注意 对于 WSF_SPACE_MOV 和 WSF_NORAD_SPACE_MOV,偏心率还必须小于 1.0(抛物线轨道)。</td></tr><tr><td>命令</td><td>semimajor_axis &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的半长轴。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,半长轴成为圆的半径。注意 此输入等同于 revolutions_per_day,因为两者通过开普勒第三定律相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>revolutions_per_day &lt;real-value&gt;</td></tr><tr><td>解释</td><td>指定卫星每天绕地球的圈数。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 此输入等同于 semiajor_axis,因为两者通过开普勒第三定律相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>periapsis_radius &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的近地点半径。这是卫星与中心体中心之间的最小距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,近地点半径等于远地点半径和半长轴。注意 此输入等同于 periapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>apoapsis_radius &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的远地点半径。这是卫星与中心体中心之间的最大距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,远地点半径等于近地点半径和半长轴。注意 此输入等同于 apoapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>periapsis_altitude &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的近地点高度。这是卫星与中心体表面之间的最小距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,近地点高度等于远地点高度。注意 此输入等同于 periapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>apoapsis_altitude &lt;length-value&gt;</td></tr><tr><td>解释</td><td>指定定义轨道的椭圆的远地点高度。这是卫星与中心体表面之间的最大距离。默认值:无。必须提供此值或从其他命令派生。参见轨道元素输入值的派生。注意 对于偏心率为零,远地点高度等于近地点高度。注意 此输入等同于 apoapsis_altitude,因为两者通过中心体的平均半径相关。如果两者都指定,则使用最后一个指定的。</td></tr><tr><td>命令</td><td>raan | right ascension_ofascending_node &lt;angle-value&gt;</td></tr><tr><td>解释</td><td>指定升交点的赤经(“raan”)。这是沿天赤道从春分点(赤经角)逆时针测量的卫星从南向北穿过赤道(升交点)的角度。
 默认值:0度
 注意raan值必须大于或等于零且小于360度(2π弧度)。注意raan参考于真日期坐标系。</td></tr><tr><td>命令</td><td>inclination&lt;angle-value&gt;</td></tr><tr><td>解释</td><td>指定轨道平面切线与地球自转轴的分离角。
 默认值:0度

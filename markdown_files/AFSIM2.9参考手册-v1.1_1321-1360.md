@@ -1,35 +1,3 @@
-![](images/c4074fdf68363bc5ccb13bb6ad25344444d24e03a247f73eb127324baba270c1.jpg)
-
-概述
-
-显示器由中心的 HUD 和其下方的简单前置控制（UFC）显示组成。
-
-HUD 的顶部提供了一个水平航向带，当前航向（度）显示在带的中心框中。
-
-HUD 的左侧显示地速（节）、校准空速（节）、迎角（alpha，度）、马赫数、当前过载和可用过载。它还包括 HUD 模式（如 NAV）以及箔条和照明弹消耗对策的计数。
-
-HUD 的右侧显示垂直速度（英尺/分钟）、气压高度（英尺）、雷达高度（英尺），以及航路点信息，包括航路点编号、航向、航路点距离（海里）和到达航路点的时间（小时:分钟:秒）。它还包括导航模式和飞行员控制信息。
-
-HUD 的底部显示滚动指示器。
-
-中心显示俯仰/滚动梯和速度矢量。
-
-UFC包括左侧的标准化推力指示器。绿色区域表示军用功率（干推力），红色区域表示加力/再热（湿推力）。中心显示质量摘要（所有值以千磅为单位），显示总重、总燃料、内部燃料和外部燃料。
-
-注意：并非所有数据都可能显示，因为某些移动类型不提供所有显示的数据，但所有可用数据将被显示。
-
-偏好设置
-
-从偏好设置中可以设置抬头视图的分辨率。
-
-![](images/2574d5fc6dda775f912e2ddb2cd0ccc75fed6d3500079f508c96c4065235e405.jpg)
-
-![](images/a165da3d1f09563e5bd651c77b6a6883799689717b74bdb1c025eb136fbe92fe.jpg)
-
-![](images/9d77978300e9d2a049237753d933465bb2bd31c987a2f205d9b9e38455fd87ef.jpg)
-
-![](images/abefbd879323378a8b1d2281527b207a161d8207cabe9882e62168d18e2ef2fc.jpg)
-
 # 5.3.2.2.3.6. 场景内消息 Comment - Mystic
 
 Comments 是通过 AFSIM 脚本使用 WsfPlatform.Comment 脚本方法生成的消息。
@@ -921,4 +889,11 @@ isofcategory：如果事件适用于给定类别的平台，则通过。
 # 功能
 
 Performance Analyzer…：显示应用程序使用的内存量。  
-ShowMapWindow SceneGraph：显示地图显示的场景图。右键单击节点将提供详细信
+ShowMapWindow SceneGraph：显示地图显示的场景图。右键单击节点将提供详细信息选项。
+
+ReloadShaders：重新加载应用程序使用的所有 GLSL 着色器。这将捕获着色器源文件的实时更改。  
+Toggle Graphics Stats：切换显示帧率和其他诊断图形显示。  
+TogglePolygonMode：在填充、线框和顶点之间切换多边形绘制模式。  
+Reload Model Database：这将重新加载所有 models.txt 文件，有效地捕获对文件所做的编辑。  
+Extended Draw Browser：在 WsfDraw 浏览器中显示图层的内容。
+

@@ -1,27 +1,3 @@
-```txt
-script void on_taskcomplete(WsfTask aTask)  
-    ... script commands ...  
-end_script  
-script void on_task_assign_sent(WsfTask aTask, WsfTrack aTrack)  
-    ... script commands ...  
-end.script  
-script void on_task.cancel_sent(WsfTask aTask)  
-    ... script commands ...  
-end.script  
-script void on_taskcomplete_sent(WsfTask aTask)  
-    ... script commands ...  
-endcript  
-script void on-operating_level_change(string aLevel)  
-    ... script commands ...  
-endcript  
-script void on_track_drop()  
-    ... script commands ...  
-end.Script  
-end Processor 
-```
-
-WSF_TASK_PROCESSOR 是 WSF_TRACK_STATE_CONTROLLER 的扩展，提供了一种通用机制，用于发送和接收与轨迹相关的“任务分配”。它利用 WSF_TRACK_STATE_CONTROLLER 的功能来分类轨迹，并提供额外的脚本命令（例如，AssignTask 和 CancelTask，如WsfTaskManager 中定义），以允许任务的发送和接收。
-
 # 轨迹状态控制器命令
 
 evaluate_candidate_tracks <boolean>: 指示是否评估“候选轨迹”。候选轨迹是已接收但尚未确定为“稳定”的轨迹（由过滤器定义）。
@@ -1833,4 +1809,10 @@ aimpoint_evaluation_interval <time-value>
 
 ```txt
 phase PHASE_X ... aimpont_altitude_offset 10000 m 
+aimpoint_azimuth_offset 45 deg either  
+aimpoint_range_offset 10 nm  
+next_phase PHASE_Y when target_azimuth > 45 deg  
+end_phase 
 ```
+
+在此示例中，目标点将被创建，使得当武器到达该点时，目标将位于相对方位角 45 度、距离 10 海里处，且武器将位于目标上方 10000 米的高度。next_phase 命令中的target_azimuth 比较值应与 aimpoint_azimuth_offset 的值相同。

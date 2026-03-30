@@ -1,11 +1,3 @@
-![](images/9094d4934f59e51f45db5fed87daa6848986744594d3b1b3f65ececc8d3d68da.jpg)
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
-
-![](images/a349ede8a915c84a65ca0322ff3b1e8513eec9b14f9a15f031fe17c9d1fc56cb.jpg)
-
-UNCLASSIFIED
-
 # 运行菜单
 
 ![](images/d219204260cfee7509efdbd400dcdb3a3142bdbfd726df6f9c59ffcd8dba6592.jpg)
@@ -1412,3 +1404,17 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 ![](images/5102d7795e569c7896f40dafe2ad018deaa539ed917bbe58ff7f852fc552a143.jpg)
 
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+- 查看任务分配器（Task Assigner）中的任务块（Task blocks）：  
+- 每种之前讨论过的任务类型都有一个对应的块。  
+- 复选框的含义是什么？
+
+- 它们表示基于受任务者资源的可用任务类型。  
+例如：如果受任务者是一个发射器（launcher），那么“Fire”和“Custom”将是可选项。
+
+![](images/0fd63f5ac8ca66ffc737e683b7eee87a3e18b94423ea047cb3307706b0c39459.jpg)
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+23
+
+![](images/c9fed18e02d8f31be4b34d2ddee951cdf555dfa614e43314473cb8f791dbfb83.jpg)

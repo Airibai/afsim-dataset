@@ -1,9 +1,3 @@
-请记住，传感器的类型由命令 category <EW/TAR/TTR/RWR> 确定，无论传感器的属性或其实例化的类如何。例如，分配了 TAR 类别的 WSF_GEOMETRIC_SENSOR 将被视为 TAR，无论是为了此检查还是在 IADSC2 代码中。如果传感器出现在通过其任何指挥链连接到武器管理器平台的平台上，则武器管理器平台“可以访问”传感器。传感器可以位于从属于、优于或与武器管理器平台同级的平台上。
-
-WMAI platforms using RWR response must deploy an RWR：对于每个启用了 RWR 响应的WSF_WEAPONS_MANAGER_AI 平 台 ， 检 查 平 台 是 否 具 有 类 别 为 RWR 的WSF_ESM_SENSOR，并且该传感器内部链接到跟踪处理器，跟踪处理器必须指向平台的主跟踪管理器。通过在 rwr_response 块中使用 enable 命令启用 RWR 响应。如果平台具有多个跟踪处理器，并且 RWR 链接到的跟踪处理器被指定为非主跟踪处理器，则平台将无法通过检查。  
-WMAI platforms using RWR response should have RWR tuned to detect enemy TTRS：对于每个启用了 RWR 响应的 WSF_WEAPONS_MANAGER_AI 平台，检查 RWR 的频带是否调整为至少一个敌方 TTR 在 RWR 的频带内发射。如果 RWR 完全无法接收到敌方传感器，或者只能接收到较低质量（EW 或 TAR）的传感器，检查将发出警告。  
-Weapons on WMAI platforms should have required auxiliary data：对于每个启用了 RWR响应的 WSF_WEAPONS_MANAGER_AI 平台，检查平台上的每种武器是否具有以下辅助数据：maxTOF、avgSpd、maxRng、minRng、shootDelay 和 estPK。
-
 # Session Notes
 
 MissingPlatforms：通知用户场景中每个在运行 Checks 时未在模拟中激活的平台。如果平台的创建时间晚于运行 Checks 的时间，通知用户平台可能缺失，因为它尚未创建。如果平台的创建时间早于运行 Checks 的时间，通知用户平台可能缺失，因为它已被删除。如果此 Session Note 认为模拟中缺少任何平台，Scenario Analyzer 将为用户提供调整运行 Checks 时间的选项。有关更多信息，请参阅高级功能：修改 Check 执行时间。
@@ -935,3 +929,6 @@ end_time
 递归：递归是指规则引用可以重复 0 到多次或 0 到 1 次。* 表示 0 到多次， $^ +$ 表示1 到多次，? 表示 0 到 1 次。
 
 { string_list $\text{串}$ string $>$ \*end_string_list |ABCD{EFG}？
+}
+
+使用 * 或 $^ +$ 时，终止字面量的存在很重要。例如，在 stuff <string>* end_stuff 中，任何数量的字符串将被读取，直到找到 end_stuff。但在 stuff<int>* 中，将消耗每个匹配整数规则的标记，并在遇到非整数标记时停止。因此，尽可能提供一个终止字面量。

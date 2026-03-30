@@ -1501,3 +1501,18 @@ processors/single_large_sam_tactics.txt
 ·如果我们可交战
 
 ![](images/57560283982a15d9dedc22853125635eb999542256bbc078312542e9c09b0835.jpg)
+- Fire是处理里的一个方法
+
+- 如果开火任务分配成功则返回真
+
+processors/single_large_sam Tactics.txt
+
+![](images/b87e7915793ff9c5b6e374fb578cfab30edf4e41f49f0a6ecb193da2651a5619.jpg)
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.
+
+29
+
+![](images/70a77d6dcfe3e9cdaa4a6d064368b23bc8d3429f0e83e9be7917a19a36564177.jpg)
+
+UNCLASSIFIED

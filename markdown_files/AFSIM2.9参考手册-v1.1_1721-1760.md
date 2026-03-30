@@ -1,18 +1,3 @@
-- 查看任务分配器（Task Assigner）中的任务块（Task blocks）：  
-- 每种之前讨论过的任务类型都有一个对应的块。  
-- 复选框的含义是什么？
-
-- 它们表示基于受任务者资源的可用任务类型。  
-例如：如果受任务者是一个发射器（launcher），那么“Fire”和“Custom”将是可选项。
-
-![](images/0fd63f5ac8ca66ffc737e683b7eee87a3e18b94423ea047cb3307706b0c39459.jpg)
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
-
-23
-
-![](images/c9fed18e02d8f31be4b34d2ddee951cdf555dfa614e43314473cb8f791dbfb83.jpg)
-
 # 实践：任务分配（Task Assigner）/任务状态浏览（Task Status Browser）
 
 ![](images/5f3eb9473c1666102c9fee176bf06e083de774e28a9d6fb0e894836824aa4cd1.jpg)
@@ -1388,5 +1373,17 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 - 武器
 
 ![](images/f246c8128d44e8d422e1b9b5fa594482300e4cf96c28c587a78e815953eb46f6.jpg)
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+- 让我们分析武器交战结果，以评估蓝方的武器交战表现：  
+- 转到工具 $\rightarrow$ 显示交战统计。  
+- 在攻击者下拉菜单中，选择Side: blue（蓝方）。  
+- 在目标下拉菜单中，选择Side:red（红方）。
+
+![](images/bc98eb1862a86415927a0994ef7e666550849eb6c768b85b11e8cb742f3d600a.jpg)
+
+![](images/ebae382580f99fee0da34673355419de32a4d619fc7d713eb317bf612294575d.jpg)
+
+![](images/f2b6673a323beef36494f335ca1520240d4421e854a4a3c2691f59ea7704bc62.jpg)
 
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.

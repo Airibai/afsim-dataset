@@ -1395,3 +1395,30 @@ new(attribute-name, key-name)向ObjectMap属性添加新条目，并将当前对
 将命令链名称映射到指挥官名称(var ObjectMap/Strinng commandChains)  
 {#当此规则匹配时，使用第一个用户输入添加一个新的命令链条目#然后将值分配给第二个用户输入。
 ```
+```txt
+command_chain<string> <string>[new(commandChains,$1);this=$2] 
+```
+
+```txt
+apply($$) 
+```
+
+将先前的 (new …) 或 (load …) 规则应用于代理数据结构。
+
+通常 (new …) 和 (load …) 仅对符号表操作，对结构属性没有影响。此命令对代理结构执行与符号表相同的操作。
+
+```txt
+skip() 
+```
+
+进入没有当前代理对象的模式。这允许执行规则而不应用任何代理更改。例如，当使用<Platform> 规则时，当前代理对象必须是 Platform 类型，否则会报告错误。使用
+
+```txt
+[skip()]<Platform> 
+```
+
+或缩写形式（规则名称前缀为冒号）
+
+```txt
+:Platform> 
+```

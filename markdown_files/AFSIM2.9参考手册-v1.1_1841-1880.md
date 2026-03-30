@@ -1,15 +1,3 @@
-# 5) 一部目标捕获雷达(ACQ_RADAR)3510_acq_radar
-
-▫ 其探测距离为 92 公里，雷达建立的跟踪质量要高于早期预警雷达，捕获目标后上报给大型地空导弹营
-
-# 6) 一部目标跟踪雷达(LARGE_SAM_TTR)3520_large_sam_ttr
-
-▫ 其探测距离为 64.8 公里，其跟踪质量要高于目标捕获雷达，捕获目标后上报给大型地空导弹营
-
-# 7) 三部大型地空导弹发射器(LARGE_SAM_LAUNCHER)
-
-▫ 听大型地空导弹营指挥，打击对应轨迹目标
-
 # 6.1.10.1.1.4. 仿真过程
 
 阶段零：四架无人机照着设置的四个目标和路径就奔过去投弹了
@@ -1573,3 +1561,12 @@ DISTRIBUTIOstrtithodtoU.oventAcdotrsugOtrststisumetsld AFRL/RQQD 12
 哪些节点会被执行？
 
 DISTRIBUTIOstritiuttUetisdtetractsrstftumtld AERL/ROOD 13 13
+![](images/eaa03ac2bb9c7aa2f218b3a3d9c6fd17bcf3df53f07b68cfe491831702dc213d.jpg)
+
+![](images/b760e387e7272c4829b931964c957ccbc7cc48d2851edb91c257377aaaac84a6.jpg)
+
+![](images/04cca1dbaa07ce739c04ebf4b42d783e7f183025ddb340ce9438778a19ac3894.jpg)
+
+DISTRIBUTIOstrtithdtUoeentecisdtetractostereqestftcmntal AFRL/RQQD 14
+
+![](images/a1a398e6572957f19e662bce25d98d29da7e2866509054711a77e34419d5c3ac.jpg)

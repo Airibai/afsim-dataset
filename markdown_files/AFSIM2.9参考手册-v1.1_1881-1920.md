@@ -1,13 +1,3 @@
-![](images/eaa03ac2bb9c7aa2f218b3a3d9c6fd17bcf3df53f07b68cfe491831702dc213d.jpg)
-
-![](images/b760e387e7272c4829b931964c957ccbc7cc48d2851edb91c257377aaaac84a6.jpg)
-
-![](images/04cca1dbaa07ce739c04ebf4b42d783e7f183025ddb340ce9438778a19ac3894.jpg)
-
-DISTRIBUTIOstrtithdtUoeentecisdtetractostereqestftcmntal AFRL/RQQD 14
-
-![](images/a1a398e6572957f19e662bce25d98d29da7e2866509054711a77e34419d5c3ac.jpg)
-
 # UNCLASSIFIED
 
 # 行为树-答案1
@@ -1471,3 +1461,34 @@ DISTRIBUTIOstrtithodtoU.oventAcdotrsugOtrststisumetsld AFRL/RQQD 13
 ![](images/e1547c87497062ebdab6a67aadbd75aea0f06f61eb003e1ecf18c9a36bef2c32.jpg)
 
 DISTRIBUTIOstrittdvetAgecdtheotractsgOthreqstsfortumtal AFRL/ROOD 14 14
+scenarios/red_air_support.txt   
+DISTRIBUON C. Distribution authorized to U.S. Government Agencies and their contractors, 9 Aug 19. Other requests for this document shall be referred to AFRL/RQQD 15   
+```txt
+74 platform escort_south RED_STRIKER   
+76 side red   
+77 icon weasel   
+78 command_chain red_chain ship_lead   
+79 route   
+81 position 29:33:57.54n 80:08:06.19w altitude 35000 ft msl   
+82 speed 450 kts   
+83 position 29:46:00.17n 80:36:37.58w altitude 35000 ft msl   
+84 end-route   
+85 NOTE: added north AND south escorts!!!   
+86 heading 250 deg   
+87 edit processor task_mgr   
+89 edit behavior escort   
+90 script_variables   
+91 mDrawEscortData = true;   
+92 mEscortNames[0] = "soj_south";   
+93 mFormationPositionX = 0; // meters in front of of package   
+94 mFormationPositionY = -5*1852; // meters off right wing of package   
+95 mEscortProtectDistance = 60 * MATH.M_PER_NM();   
+96 mWeaponRangeToInclude = 0;   
+97 mEscortChaseDistance = 5 * MATH.M_PER_NM();   
+98 end scripted_variables   
+99 end_behavior   
+100 end Processor   
+101 endplatform 
+```
+
+![](images/aead2459af7e8f03b85d5b5753c62ba16a9bd2d62abc86286a02fc5c2d8f2bac.jpg)

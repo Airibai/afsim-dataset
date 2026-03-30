@@ -1,17 +1,3 @@
-- 要扩展一个场景，您必须创建一个继承自 WsfScenarioExtension 类的类
-
-# class ComponentTypesRegistration: public WsfScenarioExtension
-
-- 您必须重写以下方法:
-
-- AddedToScenario：接收扩展被添加到场景的通知，通常用于注册额外的组件类型对象和工厂
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
-
-49
-
-![](images/b3b6c4e0be118aebd58ff2e13c29fe37308dacde9e1586cae97ce9d0199e5127.jpg)
-
 # 组件练习1-检视4
 
 # ComponentTypesRegistration.hpp
@@ -1448,3 +1434,18 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 
 void ShieldComponent::MessageReceived(double wsf::comm::Comm* aXmtrPtr, wsf::comm::Comm* aRcvrPtr, const WsfMessage& aMessage, wsf::comm::Result& aResult)   
 { std::string type $=$ aMessage.GetSubType(); if (type $= =$ "DROP_SHIELDS") { // RAI block auto out $=$ ut::log::info() $\ll$ "Turning off shield component."; out.AddNote() $\ll$ "T $=$ " $\ll$ aSimTime; out.AddNote() $\ll$ "Platform:" $\ll$ GetPlatform()->GetName(); out.AddNote() $\ll$ "Shield:" $\ll$ 名GetName(); } GetPlatform()->GetSimulation()->TurnPartOff(aSimTime, this); }
+- 对于每个仿真扩展，仿真会调用 Initialize 方法。  
+- 完成 UDP_Observer::Initialize 的实现:
+
+- 创建一个新的 GenUDP_Connection:
+
+- 使用 new 操作符创建一个指向新 GenUDP_Connection 的指针。  
+- 将 GenUDP_Connection 指针分配给类成员变量 mConnectionPtr。  
+- 使用 GenUDP_Connection 的 Init() 方法初始化连接（传入成员变量 mAddress 和 mPort）。  
+- 请参考 Visual Studio 解决方案中 genio 项目的头文件 GenUDP_Connection.hpp 以确保语法正确。
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+58
+
+![](images/8f7898667d472541468533e3766b73d3e47d9593120b29c65dbe5cdb90105ab3.jpg)

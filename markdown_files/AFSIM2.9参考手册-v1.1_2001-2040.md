@@ -1,39 +1,3 @@
-CMake 生成构建文件的说明
-
-- CMake生成的文件类型
-
-CMake会根据操作系统生成不同的构建文件：
-
-- 在Linux系统上，CMake生成Makefiles。
-
-- 在Windows系统上，CMake生成Visual Studio项目文件。
-
-选择构建目录
-
-选择一个位于源代码目录之外的构建目录。这种做法有以下好处：
-
-- 将构建文件和源代码文件分开，保持目录结构清晰。
-
--避免版本控制工具（如Git）提示将构建文件添加到源代码管理中。
-
-- 标准目录结构
-
-我们使用以下标准目录布局：
-
--“src”：顶级代码目录，存放源代码文件。
-
-- "build": 构建目录, 存放生成的构建文件。
-
-- "dependencies": 依赖目录，包含第三方工具和 vtk resources。
-
-- 这种目录结构有助于保持项目的组织性和可维护性，同时避免构建文件污染源代码目录。
-
-swdev/ /src/ - code directory /core/ /tools/ /wizard/ /dependencies/ /3rdParty - directory for $3^{\mathrm{rd}}$ Party tools /resources - directory for vtk-resources /build/ - build directory /build_mission/ /buildobserver exercice/
-
-DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
-
-Other requests for this document shall be referred to AFRL/RQQD.
-
 # UNCLASSIFIED
 
 ![](images/1ca4c2fb3fed32a22d21dc91af68c541fd9eaade69e51f285bf986277e6cc0df.jpg)
@@ -2000,3 +1964,15 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 
 1. 将库加载到内存中。  
 2. 一旦加载完成，AFSIM会调用该库中的WsfPluginSetup函数。
+- 检查 SensorPluginRegistration.cpp
+
+- 审查并理解 WsfPluginSetup 函数。
+
+```cpp
+SENSOR_EXERCISE exporting void WsfPluginSetup(WsfApplication& aApplicationPtr)  
+{  
+    aApplicationPtr.RegisterExtension("tricorder_sensorregistration", ut::make_unique<TricorderSensorRegistration>();  
+} 
+```
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQDD.

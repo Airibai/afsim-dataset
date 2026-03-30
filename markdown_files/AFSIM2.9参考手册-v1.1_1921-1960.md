@@ -1,35 +1,3 @@
-scenarios/red_air_support.txt   
-DISTRIBUON C. Distribution authorized to U.S. Government Agencies and their contractors, 9 Aug 19. Other requests for this document shall be referred to AFRL/RQQD 15   
-```txt
-74 platform escort_south RED_STRIKER   
-76 side red   
-77 icon weasel   
-78 command_chain red_chain ship_lead   
-79 route   
-81 position 29:33:57.54n 80:08:06.19w altitude 35000 ft msl   
-82 speed 450 kts   
-83 position 29:46:00.17n 80:36:37.58w altitude 35000 ft msl   
-84 end-route   
-85 NOTE: added north AND south escorts!!!   
-86 heading 250 deg   
-87 edit processor task_mgr   
-89 edit behavior escort   
-90 script_variables   
-91 mDrawEscortData = true;   
-92 mEscortNames[0] = "soj_south";   
-93 mFormationPositionX = 0; // meters in front of of package   
-94 mFormationPositionY = -5*1852; // meters off right wing of package   
-95 mEscortProtectDistance = 60 * MATH.M_PER_NM();   
-96 mWeaponRangeToInclude = 0;   
-97 mEscortChaseDistance = 5 * MATH.M_PER_NM();   
-98 end scripted_variables   
-99 end_behavior   
-100 end Processor   
-101 endplatform 
-```
-
-![](images/aead2459af7e8f03b85d5b5753c62ba16a9bd2d62abc86286a02fc5c2d8f2bac.jpg)
-
 # UNCLASSIFIED
 
 # 红色控制器
@@ -1548,3 +1516,12 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19.
 
 Other requests for this document shall be referred to AFRL/RQQD.
+- AFSIM 提供了处理和支持仿真执行、常规计算以及基本功能的能力：
+
+- 场景管理 提供场景加载器和对象，用于读取所有场景输入数据，并维护类型列表。  
+仿真管理提供仿真加载器和对象。  
+时间管理提供时钟源。  
+- 事件管理 提供发布/订阅功能，使仿真观察者能够注册仿真事件。  
+地理空间数据管理提供地形和视线数据。  
+- 插件管理 允许AFSIM在运行时找到插件并将其加载到内存中。  
+实用工具提供地球模型、坐标系、数学运算等功能。

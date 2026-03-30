@@ -1,34 +1,3 @@
-运行仿真！（按F5）  
-打开文件2_comm_sats.aer
-
-选择jacksonabad
-
-右键单击并选择WaterfallPlot（瀑布图）
-
-![](images/6d99c853d81ac6c28d846554ea33b13fdbfb49610a33a45cc5cb41b43d518b02.jpg)
-
-将InteractionType（交互类型）设置为Detecting（检测）  
-查看生成的图表
-
-尝试启用jacksonabad的以下功能：
-
-hh传感器体积（SensorVolume）  
-传感器轨迹线（OutgoingSensor TrackLines)
-
-下一步是将jacksonabad连接到NEARIDIUM星座......
-
-![](images/9501b55418c941a8a222ac4f2487c5d95fc570cece39a81eaba3c44959c07a1e.jpg)
-
-DISTRIBUTioNC.DistributionauthorizedtoU.S.GovernmentAgenciesandtheircontractors,11-Feb-2020.
-
-Copyright  2020 Infoscitex, a DCS company Allrights reserved
-
-Otherrequestsforthisdocument shall bereferredtoAFRL/RQQD.
-
-35
-
-![](images/049d9863c051629b971f32ad4a0376c680724a8604bcf110f87bcdbbafc6827f.jpg)
-
 # UNCLASSIFIED
 
 # 实践：下行消息
@@ -1801,3 +1770,15 @@ ${ \mathsf { R C S } } = m ^ { 2 }$ 的目标探测范围：100 海里(185.2 公
 
 ▫ 其主要的指挥逻辑是收到联合防空指挥所下达的轨迹任务后，先开启目标捕获雷达，在捕获目标后再开启目标跟踪雷达  
 □ 当目标在地空导弹的射程范围内后，进行打击
+# 5) 一部目标捕获雷达(ACQ_RADAR)3510_acq_radar
+
+▫ 其探测距离为 92 公里，雷达建立的跟踪质量要高于早期预警雷达，捕获目标后上报给大型地空导弹营
+
+# 6) 一部目标跟踪雷达(LARGE_SAM_TTR)3520_large_sam_ttr
+
+▫ 其探测距离为 64.8 公里，其跟踪质量要高于目标捕获雷达，捕获目标后上报给大型地空导弹营
+
+# 7) 三部大型地空导弹发射器(LARGE_SAM_LAUNCHER)
+
+▫ 听大型地空导弹营指挥，打击对应轨迹目标
+

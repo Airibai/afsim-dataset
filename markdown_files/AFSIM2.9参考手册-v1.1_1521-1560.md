@@ -1510,3 +1510,28 @@ DISTRIBUTioNC.Distributionauthorized to U.S.GovernmentAgenciesandtheircontractor
 ![](images/12f35c4d9888b1bcfa9749bfe1fabcbde6ebf0bd151d162cbf9649eea6362b06.jpg)
 
 DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.
+- 平台可以有组件，类似传感器、处理器、运动  
+- 平台可以有属性，类似图标和阵  
+- 平台特性是平台对象的一个属性
+
+- 可以在平台内部定义  
+- 也可以外部定义平台引用
+
+- 特性定义可以包含以下内容：
+
+空间属性：
+
+- 方位角（水平面内的角度）  
+- 仰角（垂直面内的角度）
+
+- 电子属性：
+
+频率   
+极化（电波方向）
+
+状态
+
+![](images/12f35c4d9888b1bcfa9749bfe1fabcbde6ebf0bd151d162cbf9649eea6362b06.jpg)
+
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQQD.
+

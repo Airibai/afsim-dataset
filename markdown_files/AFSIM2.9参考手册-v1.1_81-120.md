@@ -1652,4 +1652,11 @@ class SubClass : public Base
 }；   
 void FinishWithObject(Base\* aObjectPtr)   
 { delete aObjectPtr; //无论“aObject”的运行时类型是什么，这都会调用\~Base(）!!
+public: \~Base(); // 析构函数需要是虚函数！ //...   
+};   
+class SubClass : public Base   
+{ public: \~SubClass(); // ...   
+}；   
+void FinishWithObject(Base\* aObjectPtr)   
+{ delete aObjectPtr; //无论“aObject”的运行时类型是什么，这都会调用\~Base(）!!
 ```

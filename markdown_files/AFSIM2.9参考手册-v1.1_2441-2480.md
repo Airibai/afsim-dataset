@@ -1482,4 +1482,24 @@ DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their co
 # UNCLASSIFIED
 
 ![](images/92f616129c1b6cbdc3bb9cee49153231e8ebe4f1db6527a74f98c1e50768aa1c.jpg)
+```cpp
+QList<wkf::PrefWidget> WarlockTraining::Plugin::GetPreferencesWidgets() const
+{
+    // EXERCISE 2 TASK 1a
+    // return a QList that contains the PrefWidget.
+    // This will add the widget to the Preferences display.
+    return { mPrefWidget };
+}
+QList<wkf::Action> WarlockTraining::Plugin::GetActions() const
+{
+    // EXERCISE 2 TASK 1b
+    // return the QList of Actions. This will add the actions to the Preferences' KeyBinding menu.
+    return mActions;
+} 
+```
 
+DISTRIBUTION C. Distribution authorized to U.S. Government Agencies and their contractors, 9-Aug-19. Other requests for this document shall be referred to AFRL/RQD.
+
+# UNCLASSIFIED
+
+![](images/92f616129c1b6cbdc3bb9cee49153231e8ebe4f1db6527a74f98c1e50768aa1c.jpg)

@@ -1687,4 +1687,9 @@ WSF_BALLISTIC_MISSILE_LAUNCH_COMPUTER 实现了一种用于弹道导弹的发射
 对于地对空计算，计算机将始终使用目标轨迹中的“真实平台”。
 
 此发射计算机的表格应使用 weapon_tools 实用程序生成。（参见：3.8.8.4 制导弹道导弹发射计算模型产生工具 BALLISTIC_MISSILE_LAUNCH_COMPUTER_GENERATOR ）。
+对于地对空计算，计算机将始终使用目标轨迹中的“真实平台”。
+
+此发射计算机的表格应使用 weapon_tools 实用程序生成。（参见：3.8.8.4 制导弹道导弹发射计算模型产生工具 BALLISTIC_MISSILE_LAUNCH_COMPUTER_GENERATOR ）。
+
+
 

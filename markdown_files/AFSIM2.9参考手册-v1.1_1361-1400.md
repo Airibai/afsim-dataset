@@ -937,3 +937,5 @@ P6DOFMover 和其相关插件已经被弃用，取而代之的是新的 SixDOFMo
 
 平台详情对话框可能会显示通过脚本使用 WsfEventPipe.Record 发布的数据。可以通过右键单击字段并选择一个组来绘制这些数据。
 ![](images/e76438927970668e57b55896d83232134d94dcfe4f386ab475f22148d6adc8df.jpg)
+![](images/e76438927970668e57b55896d83232134d94dcfe4f386ab475f22148d6adc8df.jpg)
+

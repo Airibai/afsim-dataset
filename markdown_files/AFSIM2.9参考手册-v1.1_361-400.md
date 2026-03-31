@@ -1814,3 +1814,9 @@ processor Commands ... Platform Part Commands ... sensors ... end Sensors minimu
 ```
 
 WSF_TRIMSIM_PROCESSOR 提供了从战区范围参考信息管理模拟（TRIMSIM）和SUPPRESSOR 实现中派生的到达时间差（TDOA）算法。它模拟了参考系统误差对空对地目标数据融合的影响。TDOA算法基于来自各种来源的误差生成目标点在三维空间中的测量误差。这些误差应用于主传感器（传感器块中的第一个传感器）的检测信息。
+```txt
+processor Commands ... Platform Part Commands ... sensors ... end Sensors minimum detections message_length ... messagepriority .. end Processor 
+```
+
+WSF_TRIMSIM_PROCESSOR 提供了从战区范围参考信息管理模拟（TRIMSIM）和SUPPRESSOR 实现中派生的到达时间差（TDOA）算法。它模拟了参考系统误差对空对地目标数据融合的影响。TDOA算法基于来自各种来源的误差生成目标点在三维空间中的测量误差。这些误差应用于主传感器（传感器块中的第一个传感器）的检测信息。
+

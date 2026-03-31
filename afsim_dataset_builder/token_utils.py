@@ -71,7 +71,7 @@ def truncate_to_tokens(text: str, max_tokens: int) -> str:
     return truncated + "\n\n...(内容截断)"
 
 
-def calculate_chunk_boundaries(text: str, min_tokens: int, max_tokens: int, overlap_ratio: float) -> List[tuple]:
+def calculate_chunk_boundaries(text: str, min_tokens: int, max_tokens: int, overlap_ratio: float) -> list[tuple]:
     """
     计算分块边界 [(start, end), ...]
     

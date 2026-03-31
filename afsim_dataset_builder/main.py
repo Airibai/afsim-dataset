@@ -167,6 +167,7 @@ class DatasetBuilder:
             if (chunk_idx + 1) % 3 == 0:
                 self.progress.save_all()
                 logger.info(f"💾 进度已保存")
+                
         
         # 5. 保存最终进度
         self.progress.save_all()

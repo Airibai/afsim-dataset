@@ -28,9 +28,9 @@ class HistoryEntry:
         """生成紧凑的历史字符串（用于构建 prompt）"""
         return (
             f"[{self.filename}#{self.chunk_index+1}] "
-            f"问：{self.question_summary} | "
-            f"知：{self.key_summary} | "
-            f"数：{self.dataset_summary}"
+            f"问题：{self.question_summary} | "
+            f"知识：{self.key_summary} | "
+            f"回答：{self.dataset_summary}"
         )
 
 

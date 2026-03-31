@@ -1,13 +1,3 @@
-```cpp
-public: \~Base(); // 析构函数需要是虚函数！ //...   
-};   
-class SubClass : public Base   
-{ public: \~SubClass(); // ...   
-}；   
-void FinishWithObject(Base\* aObjectPtr)   
-{ delete aObjectPtr; //无论“aObject”的运行时类型是什么，这都会调用\~Base(）!!
-```
-
 Cl.9- 不应重新定义继承的非虚函数。
 
 如果在派生类中重新定义非虚函数，可能会导致意外行为。如果将基类指针类型（而不是派生类指针类型）分配给派生类的地址，则调用重新定义的非虚函数实际上会调用基类中的函数！
